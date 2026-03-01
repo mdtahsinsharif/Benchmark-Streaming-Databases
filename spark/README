@@ -2,3 +2,38 @@ Follow installation steps here: https://www.sparkcodehub.com/spark/streaming/str
 - kafka
 - spark
 
+1. Download apache kafka Binary Download -> https://kafka.apache.org/community/downloads/
+-  kafka_2.12-3.7.1.tgz
+
+2. Download spark binary -> https://www.apache.org/dyn/closer.lua/spark/spark-3.5.8/spark-3.5.8-bin-hadoop3.tgz
+- spark-3.5.8-bin-hadoop3.tgz
+
+3. for each of the Downloads in 1 and 2, execute the following. For myself, I did (cd ~) first, and then:
+- tar -xvzf spark-3.5.8-bin-hadoop3.tgz
+- tar -xvzf kafka_2.12-3.7.1.tgz
+
+4. Add these exports to ~/.bashrc:
+
+BASHRC
+export SPARK_HOME=$HOME/spark-3.5.8-bin-hadoop3
+export PATH=$PATH:$SPARK_HOME/bin
+
+export KAFKA_HOME=$HOME/kafka_2.12-3.7.1
+export PATH=$KAFKA_HOME/bin:$PATH 
+
+5. source ~/.bashrc
+
+6. In Terminal 1: Run: zookeeper-server-start.sh config/zookeeper.properties
+
+7. In Terminal 2: kafka-server-start.sh config/server.properties
+
+8. In Terminal 3: kafka-topics.sh --create --topic sales --bootstrap-server localhost:9092 --partitions 3 --replication-factor 1 
+
+9. In Terminal 3: spark-submit   --deploy-mode client   --packages org.apache.spark:spark-sql-kafka-0-10_2.12:3.5.0   benchmark_spark.py
+
+10. In Terminal 4: python3 producer.py
+
+11. You can run multiple producers in multiple terminals to send more data to kafka
+
+12. Watch terminal 3 output for 5 second window results. 
+Also view data in metrics/ dir. 
