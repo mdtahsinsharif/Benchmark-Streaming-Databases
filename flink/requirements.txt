@@ -1,0 +1,75 @@
+apache-beam==2.48.0
+apache-flink==1.20.0
+apache-flink-libraries==1.20.0
+async-timeout==5.0.1
+attrs==25.4.0
+avro==1.12.1
+avro-python3==1.10.2
+brotlicffi @ file:///croot/brotlicffi_1736182461069/work
+certifi @ file:///home/task_176765898807400/croot/certifi_1767659142395/work/certifi
+cffi @ file:///croot/cffi_1736182485317/work
+charset-normalizer @ file:///home/task_176174482135433/conda-bld/charset-normalizer_1761744871447/work
+cloudpickle==2.2.1
+crcmod==1.7
+dill==0.3.1.1
+dnspython==2.8.0
+docopt==0.6.2
+fastavro==1.12.1
+fasteners==0.20
+filelock @ file:///home/task_176943957887863/croot/filelock_1769440496799/work
+find_libpython==0.5.1
+gmpy2 @ file:///croot/gmpy2_1738085463648/work
+grpcio==1.65.5
+hdfs==2.7.3
+httplib2==0.22.0
+idna @ file:///home/task_176191177045451/conda-bld/idna_1761911980742/work
+Jinja2 @ file:///croot/jinja2_1741710844255/work
+jsonpickle==3.4.2
+jsonschema==4.26.0
+jsonschema-specifications==2025.9.1
+kafka-python==2.3.0
+MarkupSafe @ file:///croot/markupsafe_1738584038848/work
+mkl-service==2.4.0
+mkl_fft @ file:///io/mkl313/mkl_fft_1730824109137/work
+mkl_random @ file:///io/mkl313/mkl_random_1730823916628/work
+mpmath @ file:///croot/mpmath_1690848262763/work
+networkx @ file:///croot/networkx_1737039604450/work
+numpy==1.23.5
+objsize==0.6.1
+orjson==3.11.7
+packaging @ file:///home/task_176104877067765/conda-bld/packaging_1761049113113/work
+pandas==2.2.3
+pemja==0.4.1
+pillow @ file:///croot/pillow_1752524526621/work
+proto-plus==1.27.1
+protobuf==4.23.4
+py4j==0.10.9.7
+pyarrow==11.0.0
+pyarrow-hotfix==0.7
+pycparser @ file:///home/task_175749556993857/conda-bld/pycparser_1757496041120/work
+pydot==1.4.2
+PyJWT==2.11.0
+pymongo==4.16.0
+pyparsing==3.3.2
+PySocks @ file:///home/task_176175228103966/conda-bld/pysocks_1761753009555/work
+python-dateutil==2.9.0.post0
+pytz==2025.2
+PyYAML @ file:///croot/pyyaml_1728657952215/work
+redis==5.3.1
+referencing==0.37.0
+regex==2026.2.19
+requests @ file:///home/task_176235919024464/conda-bld/requests_1762359590301/work
+rpds-py==0.30.0
+ruamel.yaml==0.19.1
+scipy @ file:///croot/scipy_1747238027288/work/dist/scipy-1.15.3-cp310-cp310-linux_x86_64.whl#sha256=4055d6b52bbbfc19594ac7c25008889945de175e153afc0935b6415716fa348e
+six==1.17.0
+sortedcontainers==2.4.0
+sympy @ file:///home/task_176476278707978/conda-bld/sympy_1764762918518/work
+torch==2.5.1
+torchaudio==2.5.1
+torchvision==0.20.1
+triton==3.1.0
+typing_extensions @ file:///croot/typing_extensions_1756280817316/work
+tzdata==2025.3
+urllib3 @ file:///croot/urllib3_1750775463400/work
+zstandard==0.25.0

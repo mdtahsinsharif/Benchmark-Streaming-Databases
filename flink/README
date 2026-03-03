@@ -1,0 +1,181 @@
+# Apache Flink 1.15.4 Installation Guide
+
+This guide explains how to install **Flink 1.15.4 (Scala 2.12 build)** from the binary archive:
+
+```
+flink-1.15.4-bin-scala_2.12.tgz
+```
+
+---
+
+## 1. Prerequisites
+
+Before installing Flink, make sure you have:
+
+* **Linux / macOS / WSL (recommended)**
+* **Java 8 or 11** (Java 17 is NOT supported for Flink 1.15.x)
+
+Check your Java version:
+
+```bash
+java -version
+```
+
+If Java is not installed (Ubuntu/Debian):
+
+```bash
+sudo apt update
+sudo apt install openjdk-11-jdk
+```
+
+Set JAVA_HOME (if not already set):
+
+```bash
+export JAVA_HOME=$(dirname $(dirname $(readlink -f $(which java))))
+export PATH=$JAVA_HOME/bin:$PATH
+```
+
+You can add this to your `~/.bashrc`.
+
+---
+
+## 2. Download Flink 1.15.4
+
+If you have not downloaded it yet:
+
+```bash
+wget https://archive.apache.org/dist/flink/flink-1.15.4/flink-1.15.4-bin-scala_2.12.tgz
+```
+
+---
+
+## 3. Extract the Archive
+
+```bash
+tar -xvzf flink-1.15.4-bin-scala_2.12.tgz
+```
+
+Move it to a standard location (optional but recommended):
+
+```bash
+sudo mv flink-1.15.4 /opt/flink
+```
+
+Set FLINK_HOME:
+
+```bash
+export FLINK_HOME=/opt/flink
+export PATH=$FLINK_HOME/bin:$PATH
+```
+
+Add to `~/.bashrc` for persistence.
+
+Reload shell:
+
+```bash
+source ~/.bashrc
+```
+
+---
+
+## 4. Start Flink (Standalone Mode)
+
+Start the local cluster:
+
+```bash
+$FLINK_HOME/bin/start-cluster.sh
+```
+
+You should see output indicating:
+
+* JobManager started
+* TaskManager started
+
+---
+
+## 5. Access Web UI
+
+Open your browser and go to:
+
+```
+http://localhost:8081
+```
+
+You should see the Flink Dashboard.
+
+---
+
+## 6. Run a Test Job
+
+Run the example WordCount job:
+
+```bash
+$FLINK_HOME/bin/flink run $FLINK_HOME/examples/streaming/WordCount.jar
+```
+
+To stop the cluster:
+
+```bash
+$FLINK_HOME/bin/stop-cluster.sh
+```
+
+---
+
+## 7. (Optional) Run Flink with Python
+
+Install PyFlink dependencies:
+
+```bash
+pip install apache-flink
+```
+
+Test:
+
+```bash
+python -c "import pyflink; print('PyFlink installed successfully')"
+```
+
+---
+
+## 8. Troubleshooting
+
+### Java version error
+
+If you see reflective access warnings or compatibility errors:
+
+* Make sure you are using **Java 8 or 11**.
+
+### Port already in use
+
+If port 8081 is busy:
+
+Edit:
+
+```
+$FLINK_HOME/conf/flink-conf.yaml
+```
+
+Change:
+
+```
+rest.port: 8082
+```
+
+Restart the cluster.
+
+---
+
+## 9. Verify Installation
+
+Check running processes:
+
+```bash
+jps
+```
+
+You should see:
+
+* StandaloneSessionClusterEntrypoint
+* TaskManagerRunner
+
+---
