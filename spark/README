@@ -23,6 +23,8 @@ export PATH=$KAFKA_HOME/bin:$PATH
 
 5. source ~/.bashrc
 
+--> cd ~/kafka_2.12-3.7.1/
+
 6. In Terminal 1: Run: zookeeper-server-start.sh config/zookeeper.properties
 
 7. In Terminal 2: kafka-server-start.sh config/server.properties

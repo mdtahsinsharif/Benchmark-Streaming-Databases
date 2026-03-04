@@ -1,0 +1,26 @@
+1. RUN python3.9 -m venv flink_env
+
+2. RUN source flink_env/bin/activate
+
+3. Need to check: pip install apache-flink==1.18.0
+
+4. cd ~ 
+
+5. wget https://archive.apache.org/dist/flink/flink-1.18.0/flink-1.18.0-bin-scala_2.12.tgz
+
+6. tar -xzf flink-1.18.0-bin-scala_2.12.tgz
+
+7. vim ~/.bashrc
+
+Set
+
+export FLINK_HOME=/dir/to/flink-1.18.0
+export PATH=$FLINK_HOME/bin:$PATH
+
+9. source ~/.bashrc
+
+8. Download from website: https://repo1.maven.org/maven2/org/apache/flink/flink-sql-connector-kafka/3.0.1-1.18/
+- flink-sql-connector-kafka-3.0.1-1.18.jar
+- copy this jar to $FLINK_HOME/lib
+
+9. python flink_consumer.py
