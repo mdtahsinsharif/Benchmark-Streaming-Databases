@@ -3,11 +3,21 @@ openjdk version "21.0.10" 2026-01-20
 OpenJDK Runtime Environment (build 21.0.10+7-Ubuntu-122.04)
 OpenJDK 64-Bit Server VM (build 21.0.10+7-Ubuntu-122.04, mixed mode, sharing)
 
+brew update
+brew install openjdk@21
+sudo ln -sfn $(brew --prefix openjdk@21)/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk-21.jdk
+export JAVA_HOME="$(/usr/libexec/java_home -v 21)"
+export PATH="$JAVA_HOME/bin:$PATH"
+source ~/.bashrc
+
 1. RUN python3.9 -m venv flink_env
 
 2. RUN source flink_env/bin/activate
 
-3. Need to check: pip install apache-flink==1.18.0
+3. Need to check: 
+pip install --upgrade pip setuptools wheel
+pip install --force-reinstall setuptools==65.5.0
+pip install --no-build-isolation apache-flink==1.18.0
 
 4. cd ~ 
 
@@ -30,3 +40,4 @@ export PATH=$FLINK_HOME/bin:$PATH
 
 
 9. python flink_consumer.py
+
