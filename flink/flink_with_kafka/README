@@ -1,43 +1,56 @@
-java -version
+FLINK SETUP.
+
+Pre-requisites:
+- ensure that the kafka and zookeeper setup has been done, as mentioned in SPARK README
+
+
+1. 
+Create Virtual Env. In appropriate directory
+- RUN: python3.9 -m venv flink_env
+- RUN: source flink_env/bin/activate
+
+
+2. 
+Check java version using (java -version). If its not 21, download openjdk@21 
+- RUN: brew update
+- RUN: brew install openjdk@21
+- RUN: sudo ln -sfn $(brew --prefix openjdk@21)/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk-21.jdk
+- RUN: vim ~/.bashrc
+- Add the following to ~/.bashrc or ~/.zshrc. Save and exit by clicking :x. 
+  export JAVA_HOME="$(/usr/libexec/java_home -v 21)"
+  export PATH="$JAVA_HOME/bin:$PATH"
+- source ~/.bashrc
+- RUN: java -version - SEE OUTPUT
+
 openjdk version "21.0.10" 2026-01-20
 OpenJDK Runtime Environment (build 21.0.10+7-Ubuntu-122.04)
 OpenJDK 64-Bit Server VM (build 21.0.10+7-Ubuntu-122.04, mixed mode, sharing)
 
-brew update
-brew install openjdk@21
-sudo ln -sfn $(brew --prefix openjdk@21)/libexec/openjdk.jdk /Library/Java/JavaVirtualMachines/openjdk-21.jdk
-export JAVA_HOME="$(/usr/libexec/java_home -v 21)"
-export PATH="$JAVA_HOME/bin:$PATH"
-source ~/.bashrc
 
-1. RUN python3.9 -m venv flink_env
+3. 
+Download PY Apache-flink: 
+- pip install --upgrade pip setuptools wheel
+- pip install --force-reinstall setuptools==65.5.0
+- pip install --no-build-isolation apache-flink==1.18.0
 
-2. RUN source flink_env/bin/activate
+4. 
+Download flink and scala bin: 
+- cd ~ 
+- wget https://archive.apache.org/dist/flink/flink-1.18.0/flink-1.18.0-bin-scala_2.12.tgz
+- tar -xzf flink-1.18.0-bin-scala_2.12.tgz
+- vim ~/.bashrc
+- Add the following 2 vars:
+  export FLINK_HOME=$HOME/flink-1.18.0
+  export PATH=$FLINK_HOME/bin:$PATH
+- source ~/.bashrc
 
-3. Need to check: 
-pip install --upgrade pip setuptools wheel
-pip install --force-reinstall setuptools==65.5.0
-pip install --no-build-isolation apache-flink==1.18.0
-
-4. cd ~ 
-
-5. wget https://archive.apache.org/dist/flink/flink-1.18.0/flink-1.18.0-bin-scala_2.12.tgz
-
-6. tar -xzf flink-1.18.0-bin-scala_2.12.tgz
-
-7. vim ~/.bashrc
-
-Set
-
-export FLINK_HOME=/dir/to/flink-1.18.0
-export PATH=$FLINK_HOME/bin:$PATH
-
-9. source ~/.bashrc
-
-8. Download from website: https://repo1.maven.org/maven2/org/apache/flink/flink-sql-connector-kafka/3.0.1-1.18/
+5. 
+Download flink sql connector
+- Go to website: https://repo1.maven.org/maven2/org/apache/flink/flink-sql-connector-kafka/3.0.1-1.18/
 - flink-sql-connector-kafka-3.0.1-1.18.jar
 - copy this jar to $FLINK_HOME/lib
 
 
-9. python flink_consumer.py
+6. RUN: python flink_consumer.py
+
 
