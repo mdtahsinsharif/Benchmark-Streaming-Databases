@@ -4,7 +4,7 @@ SETUP KAFKA:
   1. Download apache kafka Binary Download -> https://kafka.apache.org/community/downloads/
   -  kafka_2.12-3.7.1.tgz
   
-  2. cds ~
+  2. cd ~
   - tar -xvzf ~/Downloads/kafka_2.12-3.7.1.tgz
   
   3. Add these exports to ~/.bashrc:
@@ -74,6 +74,7 @@ Download flink sql connector
 
 
 6. RUN: python flink_consumer.py
+
 
 
 
