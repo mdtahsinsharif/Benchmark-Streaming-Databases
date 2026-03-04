@@ -1,9 +1,31 @@
 FLINK SETUP.
 
-Pre-requisites:
-- ensure that the kafka and zookeeper setup has been done, as mentioned in SPARK README
+SETUP KAFKA:
+  1. Download apache kafka Binary Download -> https://kafka.apache.org/community/downloads/
+  -  kafka_2.12-3.7.1.tgz
+  
+  2. cds ~
+  - tar -xvzf ~/Downloads/kafka_2.12-3.7.1.tgz
+  
+  3. Add these exports to ~/.bashrc:
+  
+  export KAFKA_HOME=$HOME/kafka_2.12-3.7.1
+  export PATH=$KAFKA_HOME/bin:$PATH 
+  
+  4. source ~/.bashrc
+  
+  5. cd ~/kafka_2.12-3.7.1/
+  
+  6. In Terminal 1: Run: zookeeper-server-start.sh config/zookeeper.properties
+  
+  7. In Terminal 2: kafka-server-start.sh config/server.properties
+  
+  8. In Terminal 3: kafka-topics.sh --create --topic sales --bootstrap-server localhost:9092 --partitions 3 --replication-factor 1 
+  
+  9. In Terminal 4: python3 producer.py
 
 
+SETUP FLINK
 1. 
 Create Virtual Env. In appropriate directory
 - RUN: python3.9 -m venv flink_env
@@ -52,5 +74,6 @@ Download flink sql connector
 
 
 6. RUN: python flink_consumer.py
+
 
 
