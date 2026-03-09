@@ -90,7 +90,7 @@ parsed_df = raw_df.selectExpr("CAST(value AS STRING)") \
 # Compute Processing Time + Per-record Latency
 # --------------------------------------------------
 processed_df = parsed_df.withColumn(
-    "processing_time", (unix_timestamp(current_timestamp()) * 1000).cast("long")
+    "processing_time", (current_timestamp().cast("double") * 1000).cast("long")
 ).withColumn(
     "latency_ms", col("processing_time") - col("event_time")
 )
@@ -100,7 +100,7 @@ processed_df = parsed_df.withColumn(
 # Percentile Latency (P50, P95, P99) per 5-second window
 # --------------------------------------------------
 latency_percentiles_df = processed_df.groupBy(
-    window(col("processing_time").cast("timestamp"), "5 seconds")
+    window((col("processing_time")/1000).cast("timestamp"), "5 seconds")
 ).agg(
     expr("percentile_approx(latency_ms, 0.5)").alias("p50_latency_ms"),
     expr("percentile_approx(latency_ms, 0.95)").alias("p95_latency_ms"),
@@ -113,7 +113,7 @@ latency_percentiles_df = processed_df.groupBy(
 # Throughput (records processed per 5-second window)
 # --------------------------------------------------
 throughput_df = processed_df.groupBy(
-    window(col("processing_time").cast("timestamp"), "5 seconds")
+    window((col("processing_time")/1000).cast("timestamp"), "5 seconds")
 ).agg(
     count("*").alias("records_processed")
 )
