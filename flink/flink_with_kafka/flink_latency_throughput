@@ -1,115 +1,517 @@
-THROUGHPUT_5S:10> (count,4682)
-LATENCY_STATS:7> count=6000 p50=177094ms p95=177249ms p99=177287ms
-THROUGHPUT_5S:10> (count,13999)
-LATENCY_STATS:7> count=17951 p50=177937ms p95=178844ms p99=179020ms
-THROUGHPUT_5S:10> (count,23999)
-LATENCY_STATS:7> count=26159 p50=179630ms p95=181106ms p99=181597ms
-THROUGHPUT_5S:10> (count,26999)
-LATENCY_STATS:7> count=27975 p50=181771ms p95=183801ms p99=184950ms
-THROUGHPUT_5S:10> (count,21999)
-LATENCY_STATS:7> count=24289 p50=186082ms p95=188569ms p99=189254ms
-THROUGHPUT_5S:10> (count,25999)
-LATENCY_STATS:7> count=29671 p50=191350ms p95=194225ms p99=195341ms
-THROUGHPUT_5S:10> (count,23999)
-LATENCY_STATS:7> count=27137 p50=196486ms p95=198633ms p99=200632ms
-THROUGHPUT_5S:10> (count,23999)
-LATENCY_STATS:7> count=27811 p50=201631ms p95=204852ms p99=205225ms
-LATENCY_STATS:7> count=26999 p50=206788ms p95=209813ms p99=210242ms
-THROUGHPUT_5S:10> (count,23999)
-THROUGHPUT_5S:10> (count,23999)
-LATENCY_STATS:7> count=27217 p50=212379ms p95=215628ms p99=216460ms
-THROUGHPUT_5S:10> (count,23999)
-LATENCY_STATS:7> count=26232 p50=217522ms p95=220810ms p99=220940ms
-THROUGHPUT_5S:10> (count,23555)
-LATENCY_STATS:7> count=28990 p50=223230ms p95=225763ms p99=226350ms
-THROUGHPUT_5S:10> (count,26443)
-LATENCY_STATS:7> count=29557 p50=228772ms p95=231218ms p99=231518ms
-LATENCY_STATS:7> count=27999 p50=234088ms p95=237733ms p99=238040ms
-THROUGHPUT_5S:10> (count,23999)
-THROUGHPUT_5S:10> (count,23999)
-LATENCY_STATS:7> count=26371 p50=239226ms p95=242106ms p99=243073ms
-THROUGHPUT_5S:10> (count,23999)
-LATENCY_STATS:7> count=26944 p50=244982ms p95=247027ms p99=247286ms
-THROUGHPUT_5S:10> (count,23999)
-LATENCY_STATS:7> count=25366 p50=249804ms p95=252843ms p99=253295ms
-THROUGHPUT_5S:10> (count,25404)
-LATENCY_STATS:7> count=26315 p50=254567ms p95=256747ms p99=258495ms
-THROUGHPUT_5S:10> (count,24798)
-LATENCY_STATS:7> count=28822 p50=259493ms p95=262534ms p99=263043ms
-THROUGHPUT_5S:10> (count,26646)
-LATENCY_STATS:7> count=28176 p50=265401ms p95=267676ms p99=268041ms
-THROUGHPUT_5S:10> (count,23578)
-LATENCY_STATS:7> count=28981 p50=270545ms p95=273293ms p99=273775ms
-THROUGHPUT_5S:10> (count,24949)
-LATENCY_STATS:7> count=25017 p50=275707ms p95=277914ms p99=278196ms
-THROUGHPUT_5S:10> (count,24619)
-LATENCY_STATS:7> count=25999 p50=280133ms p95=282701ms p99=282900ms
-LATENCY_STATS:7> count=27719 p50=284969ms p95=287654ms p99=287864ms
-THROUGHPUT_5S:10> (count,24200)
-THROUGHPUT_5S:10> (count,25886)
-LATENCY_STATS:7> count=24615 p50=290440ms p95=292097ms p99=292324ms
-THROUGHPUT_5S:10> (count,27596)
-LATENCY_STATS:7> count=24426 p50=294884ms p95=297184ms p99=297262ms
-THROUGHPUT_5S:10> (count,24314)
-LATENCY_STATS:7> count=25236 p50=299516ms p95=301708ms p99=301844ms
-THROUGHPUT_5S:10> (count,24999)
-LATENCY_STATS:7> count=25999 p50=304002ms p95=306308ms p99=306635ms
-THROUGHPUT_5S:10> (count,24999)
-LATENCY_STATS:7> count=25667 p50=308563ms p95=311029ms p99=311069ms
-THROUGHPUT_5S:10> (count,24747)
-LATENCY_STATS:7> count=25206 p50=313795ms p95=315636ms p99=315885ms
-THROUGHPUT_5S:10> (count,28251)
-LATENCY_STATS:7> count=26124 p50=318333ms p95=320295ms p99=320431ms
-THROUGHPUT_5S:10> (count,24516)
-LATENCY_STATS:7> count=25559 p50=323041ms p95=325451ms p99=325697ms
-THROUGHPUT_5S:10> (count,25214)
-LATENCY_STATS:7> count=23988 p50=327591ms p95=329807ms p99=330028ms
-THROUGHPUT_5S:10> (count,24267)
-LATENCY_STATS:7> count=24450 p50=332355ms p95=334363ms p99=334589ms
-THROUGHPUT_5S:10> (count,24999)
-LATENCY_STATS:7> count=26676 p50=336484ms p95=339018ms p99=339089ms
-THROUGHPUT_5S:10> (count,25228)
-LATENCY_STATS:7> count=24416 p50=341862ms p95=343483ms p99=343711ms
-THROUGHPUT_5S:10> (count,27503)
-LATENCY_STATS:7> count=26362 p50=346254ms p95=348726ms p99=348936ms
-THROUGHPUT_5S:10> (count,24502)
-LATENCY_STATS:7> count=24809 p50=351168ms p95=353334ms p99=353364ms
-THROUGHPUT_5S:10> (count,24763)
-LATENCY_STATS:7> count=25003 p50=355540ms p95=357790ms p99=357880ms
-THROUGHPUT_5S:10> (count,24999)
-LATENCY_STATS:7> count=26872 p50=359986ms p95=362558ms p99=362776ms
-THROUGHPUT_5S:10> (count,24981)
-LATENCY_STATS:7> count=26295 p50=365453ms p95=367398ms p99=367517ms
-THROUGHPUT_5S:10> (count,28783)
-LATENCY_STATS:7> count=25559 p50=369914ms p95=371831ms p99=372057ms
-THROUGHPUT_5S:10> (count,24944)
-LATENCY_STATS:7> count=25657 p50=374648ms p95=376897ms p99=377121ms
-THROUGHPUT_5S:10> (count,25708)
-LATENCY_STATS:7> count=25954 p50=379281ms p95=381304ms p99=381733ms
-LATENCY_STATS:7> count=23890 p50=384093ms p95=385638ms p99=385813ms
-THROUGHPUT_5S:10> (count,25800)
-THROUGHPUT_5S:10> (count,24184)
-LATENCY_STATS:7> count=28495 p50=388108ms p95=390706ms p99=390765ms
-THROUGHPUT_5S:10> (count,28882)
-LATENCY_STATS:7> count=25999 p50=393402ms p95=395167ms p99=395565ms
-THROUGHPUT_5S:10> (count,25710)
-LATENCY_STATS:7> count=24718 p50=397928ms p95=400167ms p99=400344ms
-THROUGHPUT_5S:10> (count,25999)
-LATENCY_STATS:7> count=25280 p50=402321ms p95=404385ms p99=404784ms
-THROUGHPUT_5S:10> (count,24999)
-LATENCY_STATS:7> count=26792 p50=407523ms p95=409251ms p99=409417ms
-THROUGHPUT_5S:10> (count,24065)
-LATENCY_STATS:7> count=23438 p50=411869ms p95=413563ms p99=413706ms
-THROUGHPUT_5S:10> (count,25376)
-LATENCY_STATS:7> count=27425 p50=416604ms p95=418589ms p99=419029ms
-THROUGHPUT_5S:10> (count,26912)
-LATENCY_STATS:7> count=24526 p50=421467ms p95=423632ms p99=423931ms
-THROUGHPUT_5S:10> (count,24319)
-LATENCY_STATS:7> count=25814 p50=426029ms p95=428417ms p99=428447ms
-THROUGHPUT_5S:10> (count,25323)
-LATENCY_STATS:7> count=23999 p50=430717ms p95=432636ms p99=433106ms
-THROUGHPUT_5S:10> (count,23999)
-LATENCY_STATS:7> count=25999 p50=435663ms p95=437343ms p99=437826ms
-THROUGHPUT_5S:10> (count,23999)
-LATENCY_STATS:7> count=25718 p50=440396ms p95=442425ms p99=442484ms
-
+WINDOW_STATS:7> window_start=2026-03-09 16:41:50, window_end=2026-03-09 16:41:55, records=4000, avg_latency_ms=340874.31, p50_ms=299771, p95_ms=500108, p99_ms=538805
+WINDOW_STATS:2> window_start=2026-03-09 16:41:50, window_end=2026-03-09 16:41:55, records=3000, avg_latency_ms=351674.79, p50_ms=325000, p95_ms=518977, p99_ms=541131
+WINDOW_STATS:3> window_start=2026-03-09 16:41:50, window_end=2026-03-09 16:41:55, records=1471, avg_latency_ms=383369.86, p50_ms=368327, p95_ms=525120, p99_ms=542611
+WINDOW_STATS:3> window_start=2026-03-09 16:41:50, window_end=2026-03-09 16:41:55, records=1529, avg_latency_ms=381406.96, p50_ms=369649, p95_ms=524489, p99_ms=543287
+WINDOW_STATS:2> window_start=2026-03-09 16:41:55, window_end=2026-03-09 16:42:00, records=15851, avg_latency_ms=295712.67, p50_ms=295070, p95_ms=299401, p99_ms=339893
+WINDOW_STATS:7> window_start=2026-03-09 16:41:55, window_end=2026-03-09 16:42:00, records=15435, avg_latency_ms=294828.01, p50_ms=294829, p95_ms=298602, p99_ms=299709
+WINDOW_STATS:3> window_start=2026-03-09 16:41:55, window_end=2026-03-09 16:42:00, records=6736, avg_latency_ms=305298.43, p50_ms=298334, p95_ms=351790, p99_ms=396039
+WINDOW_STATS:3> window_start=2026-03-09 16:41:55, window_end=2026-03-09 16:42:00, records=6644, avg_latency_ms=305169.51, p50_ms=298308, p95_ms=349820, p99_ms=466208
+WINDOW_STATS:7> window_start=2026-03-09 16:42:00, window_end=2026-03-09 16:42:05, records=20563, avg_latency_ms=287114.66, p50_ms=287004, p95_ms=290414, p99_ms=292395
+WINDOW_STATS:3> window_start=2026-03-09 16:42:00, window_end=2026-03-09 16:42:05, records=8826, avg_latency_ms=294157.05, p50_ms=294222, p95_ms=296403, p99_ms=296711
+WINDOW_STATS:2> window_start=2026-03-09 16:42:00, window_end=2026-03-09 16:42:05, records=20239, avg_latency_ms=287352.98, p50_ms=287161, p95_ms=291425, p99_ms=292362
+WINDOW_STATS:3> window_start=2026-03-09 16:42:00, window_end=2026-03-09 16:42:05, records=8790, avg_latency_ms=294145.20, p50_ms=294204, p95_ms=296393, p99_ms=296718
+WINDOW_STATS:2> window_start=2026-03-09 16:42:05, window_end=2026-03-09 16:42:10, records=12907, avg_latency_ms=284115.60, p50_ms=283930, p95_ms=286749, p99_ms=287304
+WINDOW_STATS:3> window_start=2026-03-09 16:42:05, window_end=2026-03-09 16:42:10, records=11455, avg_latency_ms=289018.90, p50_ms=288863, p95_ms=292055, p99_ms=292842
+WINDOW_STATS:7> window_start=2026-03-09 16:42:05, window_end=2026-03-09 16:42:10, records=12384, avg_latency_ms=284066.54, p50_ms=283889, p95_ms=286649, p99_ms=287268
+WINDOW_STATS:3> window_start=2026-03-09 16:42:05, window_end=2026-03-09 16:42:10, records=11412, avg_latency_ms=289030.08, p50_ms=288861, p95_ms=292059, p99_ms=292846
+WINDOW_STATS:3> window_start=2026-03-09 16:42:10, window_end=2026-03-09 16:42:15, records=12148, avg_latency_ms=286079.52, p50_ms=286276, p95_ms=287692, p99_ms=288062
+WINDOW_STATS:2> window_start=2026-03-09 16:42:10, window_end=2026-03-09 16:42:15, records=11999, avg_latency_ms=280738.65, p50_ms=280786, p95_ms=282533, p99_ms=283000
+WINDOW_STATS:7> window_start=2026-03-09 16:42:10, window_end=2026-03-09 16:42:15, records=12614, avg_latency_ms=280705.98, p50_ms=280771, p95_ms=282565, p99_ms=282970
+WINDOW_STATS:3> window_start=2026-03-09 16:42:10, window_end=2026-03-09 16:42:15, records=12189, avg_latency_ms=286065.06, p50_ms=286262, p95_ms=287670, p99_ms=288061
+WINDOW_STATS:3> window_start=2026-03-09 16:42:15, window_end=2026-03-09 16:42:20, records=12624, avg_latency_ms=283811.22, p50_ms=283701, p95_ms=286350, p99_ms=287070
+WINDOW_STATS:2> window_start=2026-03-09 16:42:15, window_end=2026-03-09 16:42:20, records=11999, avg_latency_ms=277426.77, p50_ms=277455, p95_ms=279178, p99_ms=279543
+WINDOW_STATS:7> window_start=2026-03-09 16:42:15, window_end=2026-03-09 16:42:20, records=11999, avg_latency_ms=277302.42, p50_ms=277341, p95_ms=279088, p99_ms=279540
+WINDOW_STATS:3> window_start=2026-03-09 16:42:15, window_end=2026-03-09 16:42:20, records=12821, avg_latency_ms=283805.10, p50_ms=283703, p95_ms=286348, p99_ms=287105
+WINDOW_STATS:2> window_start=2026-03-09 16:42:20, window_end=2026-03-09 16:42:25, records=11999, avg_latency_ms=274277.13, p50_ms=274305, p95_ms=276000, p99_ms=276444
+WINDOW_STATS:3> window_start=2026-03-09 16:42:20, window_end=2026-03-09 16:42:25, records=12470, avg_latency_ms=280448.66, p50_ms=280456, p95_ms=282358, p99_ms=282757
+WINDOW_STATS:7> window_start=2026-03-09 16:42:20, window_end=2026-03-09 16:42:25, records=11999, avg_latency_ms=274228.82, p50_ms=274220, p95_ms=276051, p99_ms=276449
+WINDOW_STATS:3> window_start=2026-03-09 16:42:20, window_end=2026-03-09 16:42:25, records=12562, avg_latency_ms=280449.15, p50_ms=280479, p95_ms=282391, p99_ms=282770
+WINDOW_STATS:2> window_start=2026-03-09 16:42:25, window_end=2026-03-09 16:42:30, records=11999, avg_latency_ms=270960.03, p50_ms=271214, p95_ms=273003, p99_ms=273499
+WINDOW_STATS:3> window_start=2026-03-09 16:42:25, window_end=2026-03-09 16:42:30, records=11683, avg_latency_ms=277164.48, p50_ms=277180, p95_ms=278854, p99_ms=279262
+WINDOW_STATS:7> window_start=2026-03-09 16:42:25, window_end=2026-03-09 16:42:30, records=12486, avg_latency_ms=270842.46, p50_ms=271147, p95_ms=272867, p99_ms=273418
+WINDOW_STATS:3> window_start=2026-03-09 16:42:25, window_end=2026-03-09 16:42:30, records=11626, avg_latency_ms=277170.26, p50_ms=277182, p95_ms=278864, p99_ms=279260
+WINDOW_STATS:3> window_start=2026-03-09 16:42:30, window_end=2026-03-09 16:42:35, records=12559, avg_latency_ms=274041.28, p50_ms=274069, p95_ms=275859, p99_ms=276446
+WINDOW_STATS:7> window_start=2026-03-09 16:42:30, window_end=2026-03-09 16:42:35, records=11512, avg_latency_ms=267814.19, p50_ms=267800, p95_ms=270303, p99_ms=270688
+WINDOW_STATS:3> window_start=2026-03-09 16:42:30, window_end=2026-03-09 16:42:35, records=12439, avg_latency_ms=274020.25, p50_ms=274054, p95_ms=275816, p99_ms=276434
+WINDOW_STATS:2> window_start=2026-03-09 16:42:30, window_end=2026-03-09 16:42:35, records=11999, avg_latency_ms=267777.47, p50_ms=267752, p95_ms=270248, p99_ms=270678
+WINDOW_STATS:3> window_start=2026-03-09 16:42:35, window_end=2026-03-09 16:42:40, records=11534, avg_latency_ms=270893.26, p50_ms=271007, p95_ms=272865, p99_ms=273368
+WINDOW_STATS:7> window_start=2026-03-09 16:42:35, window_end=2026-03-09 16:42:40, records=12950, avg_latency_ms=199794.96, p50_ms=264216, p95_ms=267093, p99_ms=267585
+WINDOW_STATS:3> window_start=2026-03-09 16:42:35, window_end=2026-03-09 16:42:40, records=11464, avg_latency_ms=270894.28, p50_ms=271007, p95_ms=272870, p99_ms=273355
+WINDOW_STATS:2> window_start=2026-03-09 16:42:35, window_end=2026-03-09 16:42:40, records=12469, avg_latency_ms=199949.28, p50_ms=264235, p95_ms=267089, p99_ms=267622
+WINDOW_STATS:3> window_start=2026-03-09 16:42:40, window_end=2026-03-09 16:42:45, records=11970, avg_latency_ms=267622.40, p50_ms=267642, p95_ms=269858, p99_ms=270396
+WINDOW_STATS:2> window_start=2026-03-09 16:42:40, window_end=2026-03-09 16:42:45, records=11529, avg_latency_ms=44812.05, p50_ms=44606, p95_ms=46447, p99_ms=47821
+WINDOW_STATS:3> window_start=2026-03-09 16:42:40, window_end=2026-03-09 16:42:45, records=12028, avg_latency_ms=267611.60, p50_ms=267654, p95_ms=269877, p99_ms=270434
+WINDOW_STATS:7> window_start=2026-03-09 16:42:40, window_end=2026-03-09 16:42:45, records=11228, avg_latency_ms=44681.20, p50_ms=44644, p95_ms=46448, p99_ms=47591
+WINDOW_STATS:2> window_start=2026-03-09 16:42:45, window_end=2026-03-09 16:42:50, records=11999, avg_latency_ms=41662.96, p50_ms=41744, p95_ms=43269, p99_ms=43691
+WINDOW_STATS:7> window_start=2026-03-09 16:42:45, window_end=2026-03-09 16:42:50, records=12819, avg_latency_ms=41600.95, p50_ms=41699, p95_ms=43234, p99_ms=43634
+WINDOW_STATS:3> window_start=2026-03-09 16:42:45, window_end=2026-03-09 16:42:50, records=12196, avg_latency_ms=199925.69, p50_ms=264176, p95_ms=267012, p99_ms=267588
+WINDOW_STATS:3> window_start=2026-03-09 16:42:45, window_end=2026-03-09 16:42:50, records=12057, avg_latency_ms=199709.89, p50_ms=264182, p95_ms=267027, p99_ms=267610
+WINDOW_STATS:2> window_start=2026-03-09 16:42:50, window_end=2026-03-09 16:42:55, records=11999, avg_latency_ms=38836.19, p50_ms=39032, p95_ms=40767, p99_ms=41190
+WINDOW_STATS:3> window_start=2026-03-09 16:42:50, window_end=2026-03-09 16:42:55, records=11556, avg_latency_ms=44584.48, p50_ms=44605, p95_ms=46320, p99_ms=46651
+WINDOW_STATS:7> window_start=2026-03-09 16:42:50, window_end=2026-03-09 16:42:55, records=11096, avg_latency_ms=38800.69, p50_ms=38991, p95_ms=40753, p99_ms=41210
+WINDOW_STATS:3> window_start=2026-03-09 16:42:50, window_end=2026-03-09 16:42:55, records=11562, avg_latency_ms=44573.29, p50_ms=44601, p95_ms=46317, p99_ms=46625
+WINDOW_STATS:3> window_start=2026-03-09 16:42:55, window_end=2026-03-09 16:43:00, records=12062, avg_latency_ms=41603.24, p50_ms=41717, p95_ms=43265, p99_ms=43810
+WINDOW_STATS:2> window_start=2026-03-09 16:42:55, window_end=2026-03-09 16:43:00, records=11999, avg_latency_ms=36179.87, p50_ms=36177, p95_ms=38405, p99_ms=38906
+WINDOW_STATS:7> window_start=2026-03-09 16:42:55, window_end=2026-03-09 16:43:00, records=12054, avg_latency_ms=36230.32, p50_ms=36257, p95_ms=38433, p99_ms=38869
+WINDOW_STATS:3> window_start=2026-03-09 16:42:55, window_end=2026-03-09 16:43:00, records=12070, avg_latency_ms=41590.42, p50_ms=41695, p95_ms=43241, p99_ms=43781
+WINDOW_STATS:7> window_start=2026-03-09 16:43:00, window_end=2026-03-09 16:43:05, records=12847, avg_latency_ms=33238.09, p50_ms=33130, p95_ms=35903, p99_ms=36520
+WINDOW_STATS:3> window_start=2026-03-09 16:43:00, window_end=2026-03-09 16:43:05, records=12455, avg_latency_ms=38839.14, p50_ms=38892, p95_ms=40798, p99_ms=41205
+WINDOW_STATS:2> window_start=2026-03-09 16:43:00, window_end=2026-03-09 16:43:05, records=11999, avg_latency_ms=33245.65, p50_ms=33159, p95_ms=35740, p99_ms=36461
+WINDOW_STATS:3> window_start=2026-03-09 16:43:00, window_end=2026-03-09 16:43:05, records=12239, avg_latency_ms=38846.82, p50_ms=38921, p95_ms=40783, p99_ms=41182
+WINDOW_STATS:2> window_start=2026-03-09 16:43:05, window_end=2026-03-09 16:43:10, records=11999, avg_latency_ms=30395.41, p50_ms=30293, p95_ms=32762, p99_ms=33586
+WINDOW_STATS:7> window_start=2026-03-09 16:43:05, window_end=2026-03-09 16:43:10, records=10999, avg_latency_ms=30393.07, p50_ms=30245, p95_ms=32762, p99_ms=33392
+WINDOW_STATS:3> window_start=2026-03-09 16:43:05, window_end=2026-03-09 16:43:10, records=11914, avg_latency_ms=35944.98, p50_ms=35976, p95_ms=37967, p99_ms=38455
+WINDOW_STATS:3> window_start=2026-03-09 16:43:05, window_end=2026-03-09 16:43:10, records=12140, avg_latency_ms=35936.57, p50_ms=35978, p95_ms=37967, p99_ms=38446
+WINDOW_STATS:3> window_start=2026-03-09 16:43:10, window_end=2026-03-09 16:43:15, records=12427, avg_latency_ms=33006.16, p50_ms=32960, p95_ms=35419, p99_ms=36189
+WINDOW_STATS:2> window_start=2026-03-09 16:43:10, window_end=2026-03-09 16:43:15, records=12110, avg_latency_ms=27440.69, p50_ms=27445, p95_ms=29001, p99_ms=30607
+WINDOW_STATS:7> window_start=2026-03-09 16:43:10, window_end=2026-03-09 16:43:15, records=12309, avg_latency_ms=27460.90, p50_ms=27481, p95_ms=28986, p99_ms=30449
+WINDOW_STATS:3> window_start=2026-03-09 16:43:10, window_end=2026-03-09 16:43:15, records=12310, avg_latency_ms=33017.04, p50_ms=32976, p95_ms=35403, p99_ms=36186
+WINDOW_STATS:7> window_start=2026-03-09 16:43:15, window_end=2026-03-09 16:43:20, records=12689, avg_latency_ms=24210.61, p50_ms=24413, p95_ms=26172, p99_ms=26599
+WINDOW_STATS:3> window_start=2026-03-09 16:43:15, window_end=2026-03-09 16:43:20, records=11550, avg_latency_ms=30195.67, p50_ms=30117, p95_ms=32406, p99_ms=33124
+WINDOW_STATS:2> window_start=2026-03-09 16:43:15, window_end=2026-03-09 16:43:20, records=12633, avg_latency_ms=24239.07, p50_ms=24459, p95_ms=26174, p99_ms=26614
+WINDOW_STATS:3> window_start=2026-03-09 16:43:15, window_end=2026-03-09 16:43:20, records=11448, avg_latency_ms=30201.50, p50_ms=30121, p95_ms=32360, p99_ms=33020
+WINDOW_STATS:3> window_start=2026-03-09 16:43:20, window_end=2026-03-09 16:43:25, records=12182, avg_latency_ms=27205.30, p50_ms=27293, p95_ms=28667, p99_ms=29189
+WINDOW_STATS:7> window_start=2026-03-09 16:43:20, window_end=2026-03-09 16:43:25, records=11999, avg_latency_ms=21191.43, p50_ms=21174, p95_ms=23428, p99_ms=23886
+WINDOW_STATS:2> window_start=2026-03-09 16:43:20, window_end=2026-03-09 16:43:25, records=12254, avg_latency_ms=21132.46, p50_ms=21121, p95_ms=23396, p99_ms=23895
+WINDOW_STATS:3> window_start=2026-03-09 16:43:20, window_end=2026-03-09 16:43:25, records=12112, avg_latency_ms=27180.72, p50_ms=27257, p95_ms=28648, p99_ms=29160
+WINDOW_STATS:3> window_start=2026-03-09 16:43:25, window_end=2026-03-09 16:43:30, records=12468, avg_latency_ms=24113.49, p50_ms=24229, p95_ms=26242, p99_ms=26621
+WINDOW_STATS:7> window_start=2026-03-09 16:43:25, window_end=2026-03-09 16:43:30, records=11999, avg_latency_ms=18186.04, p50_ms=18037, p95_ms=20850, p99_ms=21467
+WINDOW_STATS:2> window_start=2026-03-09 16:43:25, window_end=2026-03-09 16:43:30, records=11999, avg_latency_ms=18142.83, p50_ms=17979, p95_ms=20857, p99_ms=21420
+WINDOW_STATS:3> window_start=2026-03-09 16:43:25, window_end=2026-03-09 16:43:30, records=12212, avg_latency_ms=24079.09, p50_ms=24173, p95_ms=26232, p99_ms=26637
+WINDOW_STATS:7> window_start=2026-03-09 16:43:30, window_end=2026-03-09 16:43:35, records=11999, avg_latency_ms=15206.25, p50_ms=15142, p95_ms=17654, p99_ms=18500
+WINDOW_STATS:2> window_start=2026-03-09 16:43:30, window_end=2026-03-09 16:43:35, records=11999, avg_latency_ms=15145.77, p50_ms=15095, p95_ms=17588, p99_ms=18492
+WINDOW_STATS:3> window_start=2026-03-09 16:43:30, window_end=2026-03-09 16:43:35, records=12064, avg_latency_ms=21100.64, p50_ms=21077, p95_ms=23189, p99_ms=23728
+WINDOW_STATS:3> window_start=2026-03-09 16:43:30, window_end=2026-03-09 16:43:35, records=11956, avg_latency_ms=21093.02, p50_ms=21057, p95_ms=23174, p99_ms=23689
+WINDOW_STATS:3> window_start=2026-03-09 16:43:35, window_end=2026-03-09 16:43:40, records=12413, avg_latency_ms=17931.96, p50_ms=17883, p95_ms=20389, p99_ms=21008
+WINDOW_STATS:3> window_start=2026-03-09 16:43:35, window_end=2026-03-09 16:43:40, records=12391, avg_latency_ms=17908.65, p50_ms=17852, p95_ms=20356, p99_ms=20992
+WINDOW_STATS:7> window_start=2026-03-09 16:43:35, window_end=2026-03-09 16:43:40, records=12308, avg_latency_ms=12282.42, p50_ms=12297, p95_ms=14145, p99_ms=15303
+WINDOW_STATS:2> window_start=2026-03-09 16:43:35, window_end=2026-03-09 16:43:40, records=12298, avg_latency_ms=12233.47, p50_ms=12235, p95_ms=14146, p99_ms=15331
+WINDOW_STATS:3> window_start=2026-03-09 16:43:40, window_end=2026-03-09 16:43:45, records=11867, avg_latency_ms=14957.69, p50_ms=14943, p95_ms=16965, p99_ms=17994
+WINDOW_STATS:7> window_start=2026-03-09 16:43:40, window_end=2026-03-09 16:43:45, records=12690, avg_latency_ms=9107.73, p50_ms=9286, p95_ms=10965, p99_ms=11454
+WINDOW_STATS:2> window_start=2026-03-09 16:43:40, window_end=2026-03-09 16:43:45, records=12700, avg_latency_ms=9063.64, p50_ms=9261, p95_ms=10955, p99_ms=11430
+WINDOW_STATS:3> window_start=2026-03-09 16:43:40, window_end=2026-03-09 16:43:45, records=11732, avg_latency_ms=14979.46, p50_ms=14961, p95_ms=16998, p99_ms=18026
+WINDOW_STATS:2> window_start=2026-03-09 16:43:45, window_end=2026-03-09 16:43:50, records=11999, avg_latency_ms=6076.05, p50_ms=6034, p95_ms=8296, p99_ms=9017
+WINDOW_STATS:7> window_start=2026-03-09 16:43:45, window_end=2026-03-09 16:43:50, records=11999, avg_latency_ms=6059.95, p50_ms=6032, p95_ms=8278, p99_ms=8964
+WINDOW_STATS:3> window_start=2026-03-09 16:43:45, window_end=2026-03-09 16:43:50, records=12224, avg_latency_ms=12036.98, p50_ms=12030, p95_ms=13809, p99_ms=14211
+WINDOW_STATS:3> window_start=2026-03-09 16:43:45, window_end=2026-03-09 16:43:50, records=12367, avg_latency_ms=12049.29, p50_ms=12054, p95_ms=13806, p99_ms=14202
+WINDOW_STATS:7> window_start=2026-03-09 16:43:50, window_end=2026-03-09 16:43:55, records=11999, avg_latency_ms=3256.21, p50_ms=3173, p95_ms=5417, p99_ms=5981
+WINDOW_STATS:2> window_start=2026-03-09 16:43:50, window_end=2026-03-09 16:43:55, records=11999, avg_latency_ms=3275.92, p50_ms=3197, p95_ms=5338, p99_ms=5950
+WINDOW_STATS:3> window_start=2026-03-09 16:43:50, window_end=2026-03-09 16:43:55, records=12058, avg_latency_ms=8995.13, p50_ms=9178, p95_ms=10685, p99_ms=11046
+WINDOW_STATS:3> window_start=2026-03-09 16:43:50, window_end=2026-03-09 16:43:55, records=12006, avg_latency_ms=8975.92, p50_ms=9166, p95_ms=10676, p99_ms=11026
+WINDOW_STATS:3> window_start=2026-03-09 16:43:55, window_end=2026-03-09 16:44:00, records=18086, avg_latency_ms=5321.22, p50_ms=5241, p95_ms=7981, p99_ms=8613
+WINDOW_STATS:3> window_start=2026-03-09 16:43:55, window_end=2026-03-09 16:44:00, records=17707, avg_latency_ms=5296.58, p50_ms=5218, p95_ms=7950, p99_ms=8585
+WINDOW_STATS:7> window_start=2026-03-09 16:43:55, window_end=2026-03-09 16:44:00, records=8999, avg_latency_ms=1160.43, p50_ms=1097, p95_ms=2389, p99_ms=3255
+WINDOW_STATS:2> window_start=2026-03-09 16:43:55, window_end=2026-03-09 16:44:00, records=8999, avg_latency_ms=1139.06, p50_ms=1080, p95_ms=2339, p99_ms=3232
+WINDOW_STATS:2> window_start=2026-03-09 16:44:00, window_end=2026-03-09 16:44:05, records=6999, avg_latency_ms=866.34, p50_ms=868, p95_ms=1601, p99_ms=1731
+WINDOW_STATS:7> window_start=2026-03-09 16:44:00, window_end=2026-03-09 16:44:05, records=6999, avg_latency_ms=864.88, p50_ms=859, p95_ms=1603, p99_ms=1728
+WINDOW_STATS:3> window_start=2026-03-09 16:44:00, window_end=2026-03-09 16:44:05, records=20763, avg_latency_ms=1442.77, p50_ms=1236, p95_ms=3443, p99_ms=4360
+WINDOW_STATS:3> window_start=2026-03-09 16:44:00, window_end=2026-03-09 16:44:05, records=20639, avg_latency_ms=1437.57, p50_ms=1250, p95_ms=3384, p99_ms=4315
+WINDOW_STATS:3> window_start=2026-03-09 16:44:05, window_end=2026-03-09 16:44:10, records=8782, avg_latency_ms=807.91, p50_ms=790, p95_ms=1563, p99_ms=1716
+WINDOW_STATS:2> window_start=2026-03-09 16:44:05, window_end=2026-03-09 16:44:10, records=6999, avg_latency_ms=803.87, p50_ms=777, p95_ms=1561, p99_ms=1713
+WINDOW_STATS:3> window_start=2026-03-09 16:44:05, window_end=2026-03-09 16:44:10, records=8616, avg_latency_ms=799.27, p50_ms=772, p95_ms=1560, p99_ms=1709
+WINDOW_STATS:7> window_start=2026-03-09 16:44:05, window_end=2026-03-09 16:44:10, records=7999, avg_latency_ms=829.24, p50_ms=820, p95_ms=1583, p99_ms=1740
+WINDOW_STATS:3> window_start=2026-03-09 16:44:10, window_end=2026-03-09 16:44:15, records=7659, avg_latency_ms=830.93, p50_ms=822, p95_ms=1573, p99_ms=1713
+WINDOW_STATS:2> window_start=2026-03-09 16:44:10, window_end=2026-03-09 16:44:15, records=7999, avg_latency_ms=822.58, p50_ms=816, p95_ms=1553, p99_ms=1718
+WINDOW_STATS:3> window_start=2026-03-09 16:44:10, window_end=2026-03-09 16:44:15, records=7674, avg_latency_ms=834.10, p50_ms=817, p95_ms=1586, p99_ms=1725
+WINDOW_STATS:7> window_start=2026-03-09 16:44:10, window_end=2026-03-09 16:44:15, records=6999, avg_latency_ms=810.20, p50_ms=789, p95_ms=1533, p99_ms=1685
+WINDOW_STATS:3> window_start=2026-03-09 16:44:15, window_end=2026-03-09 16:44:20, records=7036, avg_latency_ms=815.48, p50_ms=808, p95_ms=1501, p99_ms=1635
+WINDOW_STATS:7> window_start=2026-03-09 16:44:15, window_end=2026-03-09 16:44:20, records=6999, avg_latency_ms=825.78, p50_ms=822, p95_ms=1503, p99_ms=1630
+WINDOW_STATS:2> window_start=2026-03-09 16:44:15, window_end=2026-03-09 16:44:20, records=6999, avg_latency_ms=816.28, p50_ms=807, p95_ms=1506, p99_ms=1634
+WINDOW_STATS:3> window_start=2026-03-09 16:44:15, window_end=2026-03-09 16:44:20, records=6962, avg_latency_ms=804.02, p50_ms=797, p95_ms=1473, p99_ms=1628
+WINDOW_STATS:7> window_start=2026-03-09 16:44:20, window_end=2026-03-09 16:44:25, records=7999, avg_latency_ms=800.95, p50_ms=794, p95_ms=1479, p99_ms=1607
+WINDOW_STATS:2> window_start=2026-03-09 16:44:20, window_end=2026-03-09 16:44:25, records=7999, avg_latency_ms=821.67, p50_ms=823, p95_ms=1508, p99_ms=1618
+WINDOW_STATS:3> window_start=2026-03-09 16:44:20, window_end=2026-03-09 16:44:25, records=7975, avg_latency_ms=811.72, p50_ms=798, p95_ms=1494, p99_ms=1613
+WINDOW_STATS:3> window_start=2026-03-09 16:44:20, window_end=2026-03-09 16:44:25, records=7961, avg_latency_ms=822.61, p50_ms=817, p95_ms=1502, p99_ms=1609
+WINDOW_STATS:3> window_start=2026-03-09 16:44:25, window_end=2026-03-09 16:44:30, records=8000, avg_latency_ms=829.17, p50_ms=818, p95_ms=1500, p99_ms=1644
+WINDOW_STATS:3> window_start=2026-03-09 16:44:25, window_end=2026-03-09 16:44:30, records=7900, avg_latency_ms=818.13, p50_ms=813, p95_ms=1490, p99_ms=1652
+WINDOW_STATS:2> window_start=2026-03-09 16:44:25, window_end=2026-03-09 16:44:30, records=7999, avg_latency_ms=826.01, p50_ms=822, p95_ms=1501, p99_ms=1655
+WINDOW_STATS:7> window_start=2026-03-09 16:44:25, window_end=2026-03-09 16:44:30, records=7999, avg_latency_ms=836.29, p50_ms=841, p95_ms=1514, p99_ms=1642
+WINDOW_STATS:3> window_start=2026-03-09 16:44:30, window_end=2026-03-09 16:44:35, records=7055, avg_latency_ms=816.47, p50_ms=817, p95_ms=1504, p99_ms=1660
+WINDOW_STATS:2> window_start=2026-03-09 16:44:30, window_end=2026-03-09 16:44:35, records=6999, avg_latency_ms=815.20, p50_ms=803, p95_ms=1512, p99_ms=1653
+WINDOW_STATS:7> window_start=2026-03-09 16:44:30, window_end=2026-03-09 16:44:35, records=6999, avg_latency_ms=822.19, p50_ms=811, p95_ms=1531, p99_ms=1653
+WINDOW_STATS:3> window_start=2026-03-09 16:44:30, window_end=2026-03-09 16:44:35, records=7103, avg_latency_ms=817.64, p50_ms=804, p95_ms=1525, p99_ms=1656
+WINDOW_STATS:7> window_start=2026-03-09 16:44:35, window_end=2026-03-09 16:44:40, records=7999, avg_latency_ms=818.80, p50_ms=818, p95_ms=1491, p99_ms=1608
+WINDOW_STATS:2> window_start=2026-03-09 16:44:35, window_end=2026-03-09 16:44:40, records=7999, avg_latency_ms=815.93, p50_ms=810, p95_ms=1501, p99_ms=1620
+WINDOW_STATS:3> window_start=2026-03-09 16:44:35, window_end=2026-03-09 16:44:40, records=8106, avg_latency_ms=822.40, p50_ms=816, p95_ms=1512, p99_ms=1615
+WINDOW_STATS:3> window_start=2026-03-09 16:44:35, window_end=2026-03-09 16:44:40, records=8225, avg_latency_ms=812.10, p50_ms=801, p95_ms=1507, p99_ms=1623
+WINDOW_STATS:3> window_start=2026-03-09 16:44:40, window_end=2026-03-09 16:44:45, records=7847, avg_latency_ms=813.36, p50_ms=807, p95_ms=1470, p99_ms=1602
+WINDOW_STATS:7> window_start=2026-03-09 16:44:40, window_end=2026-03-09 16:44:45, records=7999, avg_latency_ms=811.72, p50_ms=804, p95_ms=1474, p99_ms=1604
+WINDOW_STATS:2> window_start=2026-03-09 16:44:40, window_end=2026-03-09 16:44:45, records=7999, avg_latency_ms=817.62, p50_ms=809, p95_ms=1473, p99_ms=1600
+WINDOW_STATS:3> window_start=2026-03-09 16:44:40, window_end=2026-03-09 16:44:45, records=8170, avg_latency_ms=818.18, p50_ms=821, p95_ms=1464, p99_ms=1591
+WINDOW_STATS:2> window_start=2026-03-09 16:44:45, window_end=2026-03-09 16:44:50, records=6999, avg_latency_ms=807.66, p50_ms=808, p95_ms=1490, p99_ms=1610
+WINDOW_STATS:3> window_start=2026-03-09 16:44:45, window_end=2026-03-09 16:44:50, records=7382, avg_latency_ms=820.33, p50_ms=823, p95_ms=1495, p99_ms=1616
+WINDOW_STATS:7> window_start=2026-03-09 16:44:45, window_end=2026-03-09 16:44:50, records=6999, avg_latency_ms=820.61, p50_ms=823, p95_ms=1512, p99_ms=1635
+WINDOW_STATS:3> window_start=2026-03-09 16:44:45, window_end=2026-03-09 16:44:50, records=7264, avg_latency_ms=813.89, p50_ms=805, p95_ms=1494, p99_ms=1621
+WINDOW_STATS:3> window_start=2026-03-09 16:44:50, window_end=2026-03-09 16:44:55, records=7890, avg_latency_ms=828.39, p50_ms=825, p95_ms=1513, p99_ms=1635
+WINDOW_STATS:7> window_start=2026-03-09 16:44:50, window_end=2026-03-09 16:44:55, records=7999, avg_latency_ms=810.76, p50_ms=797, p95_ms=1493, p99_ms=1631
+WINDOW_STATS:2> window_start=2026-03-09 16:44:50, window_end=2026-03-09 16:44:55, records=7999, avg_latency_ms=817.22, p50_ms=819, p95_ms=1486, p99_ms=1629
+WINDOW_STATS:3> window_start=2026-03-09 16:44:50, window_end=2026-03-09 16:44:55, records=8108, avg_latency_ms=828.93, p50_ms=831, p95_ms=1506, p99_ms=1633
+WINDOW_STATS:2> window_start=2026-03-09 16:44:55, window_end=2026-03-09 16:45:00, records=7999, avg_latency_ms=801.56, p50_ms=788, p95_ms=1471, p99_ms=1592
+WINDOW_STATS:3> window_start=2026-03-09 16:44:55, window_end=2026-03-09 16:45:00, records=7977, avg_latency_ms=808.25, p50_ms=810, p95_ms=1467, p99_ms=1587
+WINDOW_STATS:7> window_start=2026-03-09 16:44:55, window_end=2026-03-09 16:45:00, records=7999, avg_latency_ms=808.87, p50_ms=815, p95_ms=1458, p99_ms=1580
+WINDOW_STATS:3> window_start=2026-03-09 16:44:55, window_end=2026-03-09 16:45:00, records=8021, avg_latency_ms=812.58, p50_ms=815, p95_ms=1469, p99_ms=1589
+WINDOW_STATS:3> window_start=2026-03-09 16:45:00, window_end=2026-03-09 16:45:05, records=6537, avg_latency_ms=857.74, p50_ms=860, p95_ms=1602, p99_ms=1752
+WINDOW_STATS:3> window_start=2026-03-09 16:45:00, window_end=2026-03-09 16:45:05, records=6461, avg_latency_ms=862.30, p50_ms=867, p95_ms=1608, p99_ms=1740
+WINDOW_STATS:7> window_start=2026-03-09 16:45:00, window_end=2026-03-09 16:45:05, records=6999, avg_latency_ms=851.98, p50_ms=854, p95_ms=1609, p99_ms=1757
+WINDOW_STATS:2> window_start=2026-03-09 16:45:00, window_end=2026-03-09 16:45:05, records=6999, avg_latency_ms=844.92, p50_ms=839, p95_ms=1595, p99_ms=1748
+WINDOW_STATS:2> window_start=2026-03-09 16:45:05, window_end=2026-03-09 16:45:10, records=6999, avg_latency_ms=811.69, p50_ms=799, p95_ms=1531, p99_ms=1659
+WINDOW_STATS:3> window_start=2026-03-09 16:45:05, window_end=2026-03-09 16:45:10, records=7969, avg_latency_ms=825.89, p50_ms=816, p95_ms=1547, p99_ms=1678
+WINDOW_STATS:7> window_start=2026-03-09 16:45:05, window_end=2026-03-09 16:45:10, records=7999, avg_latency_ms=821.50, p50_ms=803, p95_ms=1539, p99_ms=1675
+WINDOW_STATS:3> window_start=2026-03-09 16:45:05, window_end=2026-03-09 16:45:10, records=8029, avg_latency_ms=822.82, p50_ms=808, p95_ms=1549, p99_ms=1688
+WINDOW_STATS:3> window_start=2026-03-09 16:45:10, window_end=2026-03-09 16:45:15, records=6481, avg_latency_ms=812.70, p50_ms=811, p95_ms=1521, p99_ms=1684
+WINDOW_STATS:7> window_start=2026-03-09 16:45:10, window_end=2026-03-09 16:45:15, records=6999, avg_latency_ms=820.20, p50_ms=814, p95_ms=1528, p99_ms=1691
+WINDOW_STATS:3> window_start=2026-03-09 16:45:10, window_end=2026-03-09 16:45:15, records=6517, avg_latency_ms=815.01, p50_ms=804, p95_ms=1525, p99_ms=1685
+WINDOW_STATS:2> window_start=2026-03-09 16:45:10, window_end=2026-03-09 16:45:15, records=7822, avg_latency_ms=851.30, p50_ms=849, p95_ms=1578, p99_ms=1733
+WINDOW_STATS:3> window_start=2026-03-09 16:45:15, window_end=2026-03-09 16:45:20, records=7925, avg_latency_ms=848.45, p50_ms=832, p95_ms=1599, p99_ms=1767
+WINDOW_STATS:2> window_start=2026-03-09 16:45:15, window_end=2026-03-09 16:45:20, records=7176, avg_latency_ms=840.73, p50_ms=826, p95_ms=1583, p99_ms=1759
+WINDOW_STATS:3> window_start=2026-03-09 16:45:15, window_end=2026-03-09 16:45:20, records=8252, avg_latency_ms=841.30, p50_ms=822, p95_ms=1595, p99_ms=1769
+WINDOW_STATS:7> window_start=2026-03-09 16:45:15, window_end=2026-03-09 16:45:20, records=7069, avg_latency_ms=846.06, p50_ms=834, p95_ms=1601, p99_ms=1776
+WINDOW_STATS:3> window_start=2026-03-09 16:45:20, window_end=2026-03-09 16:45:25, records=6899, avg_latency_ms=847.70, p50_ms=830, p95_ms=1646, p99_ms=1811
+WINDOW_STATS:3> window_start=2026-03-09 16:45:20, window_end=2026-03-09 16:45:25, records=6779, avg_latency_ms=844.69, p50_ms=820, p95_ms=1657, p99_ms=1834
+WINDOW_STATS:2> window_start=2026-03-09 16:45:20, window_end=2026-03-09 16:45:25, records=6999, avg_latency_ms=841.86, p50_ms=815, p95_ms=1660, p99_ms=1825
+WINDOW_STATS:7> window_start=2026-03-09 16:45:20, window_end=2026-03-09 16:45:25, records=7535, avg_latency_ms=843.55, p50_ms=813, p95_ms=1651, p99_ms=1813
+WINDOW_STATS:3> window_start=2026-03-09 16:45:25, window_end=2026-03-09 16:45:30, records=7042, avg_latency_ms=875.25, p50_ms=855, p95_ms=1671, p99_ms=1817
+WINDOW_STATS:2> window_start=2026-03-09 16:45:25, window_end=2026-03-09 16:45:30, records=6999, avg_latency_ms=865.99, p50_ms=848, p95_ms=1673, p99_ms=1809
+WINDOW_STATS:3> window_start=2026-03-09 16:45:25, window_end=2026-03-09 16:45:30, records=7097, avg_latency_ms=875.64, p50_ms=860, p95_ms=1675, p99_ms=1810
+WINDOW_STATS:7> window_start=2026-03-09 16:45:25, window_end=2026-03-09 16:45:30, records=7336, avg_latency_ms=860.31, p50_ms=832, p95_ms=1674, p99_ms=1807
+WINDOW_STATS:7> window_start=2026-03-09 16:45:30, window_end=2026-03-09 16:45:35, records=7056, avg_latency_ms=815.15, p50_ms=803, p95_ms=1562, p99_ms=1695
+WINDOW_STATS:2> window_start=2026-03-09 16:45:30, window_end=2026-03-09 16:45:35, records=6999, avg_latency_ms=789.55, p50_ms=765, p95_ms=1565, p99_ms=1702
+WINDOW_STATS:3> window_start=2026-03-09 16:45:30, window_end=2026-03-09 16:45:35, records=7530, avg_latency_ms=798.11, p50_ms=778, p95_ms=1581, p99_ms=1707
+WINDOW_STATS:3> window_start=2026-03-09 16:45:30, window_end=2026-03-09 16:45:35, records=7468, avg_latency_ms=791.92, p50_ms=765, p95_ms=1581, p99_ms=1717
+WINDOW_STATS:7> window_start=2026-03-09 16:45:35, window_end=2026-03-09 16:45:40, records=6999, avg_latency_ms=801.11, p50_ms=780, p95_ms=1532, p99_ms=1666
+WINDOW_STATS:3> window_start=2026-03-09 16:45:35, window_end=2026-03-09 16:45:40, records=7564, avg_latency_ms=812.23, p50_ms=798, p95_ms=1526, p99_ms=1659
+WINDOW_STATS:3> window_start=2026-03-09 16:45:35, window_end=2026-03-09 16:45:40, records=7434, avg_latency_ms=819.28, p50_ms=813, p95_ms=1543, p99_ms=1660
+WINDOW_STATS:2> window_start=2026-03-09 16:45:35, window_end=2026-03-09 16:45:40, records=7999, avg_latency_ms=811.65, p50_ms=794, p95_ms=1549, p99_ms=1666
+WINDOW_STATS:2> window_start=2026-03-09 16:45:40, window_end=2026-03-09 16:45:45, records=6999, avg_latency_ms=800.26, p50_ms=793, p95_ms=1520, p99_ms=1687
+WINDOW_STATS:7> window_start=2026-03-09 16:45:40, window_end=2026-03-09 16:45:45, records=7999, avg_latency_ms=806.13, p50_ms=793, p95_ms=1526, p99_ms=1680
+WINDOW_STATS:3> window_start=2026-03-09 16:45:40, window_end=2026-03-09 16:45:45, records=7455, avg_latency_ms=793.54, p50_ms=784, p95_ms=1519, p99_ms=1678
+WINDOW_STATS:3> window_start=2026-03-09 16:45:40, window_end=2026-03-09 16:45:45, records=7543, avg_latency_ms=780.98, p50_ms=763, p95_ms=1514, p99_ms=1692
+WINDOW_STATS:2> window_start=2026-03-09 16:45:45, window_end=2026-03-09 16:45:50, records=6999, avg_latency_ms=813.36, p50_ms=807, p95_ms=1528, p99_ms=1686
+WINDOW_STATS:3> window_start=2026-03-09 16:45:45, window_end=2026-03-09 16:45:50, records=7287, avg_latency_ms=820.14, p50_ms=808, p95_ms=1546, p99_ms=1681
+WINDOW_STATS:3> window_start=2026-03-09 16:45:45, window_end=2026-03-09 16:45:50, records=7247, avg_latency_ms=814.94, p50_ms=806, p95_ms=1546, p99_ms=1695
+WINDOW_STATS:7> window_start=2026-03-09 16:45:45, window_end=2026-03-09 16:45:50, records=7622, avg_latency_ms=823.01, p50_ms=822, p95_ms=1548, p99_ms=1703
+WINDOW_STATS:7> window_start=2026-03-09 16:45:50, window_end=2026-03-09 16:45:55, records=7376, avg_latency_ms=809.84, p50_ms=800, p95_ms=1536, p99_ms=1685
+WINDOW_STATS:3> window_start=2026-03-09 16:45:50, window_end=2026-03-09 16:45:55, records=7742, avg_latency_ms=808.02, p50_ms=797, p95_ms=1533, p99_ms=1670
+WINDOW_STATS:2> window_start=2026-03-09 16:45:50, window_end=2026-03-09 16:45:55, records=7999, avg_latency_ms=813.49, p50_ms=802, p95_ms=1535, p99_ms=1675
+WINDOW_STATS:3> window_start=2026-03-09 16:45:50, window_end=2026-03-09 16:45:55, records=7720, avg_latency_ms=807.67, p50_ms=791, p95_ms=1536, p99_ms=1672
+WINDOW_STATS:2> window_start=2026-03-09 16:45:55, window_end=2026-03-09 16:46:00, records=6999, avg_latency_ms=810.53, p50_ms=790, p95_ms=1542, p99_ms=1697
+WINDOW_STATS:3> window_start=2026-03-09 16:45:55, window_end=2026-03-09 16:46:00, records=7547, avg_latency_ms=818.43, p50_ms=812, p95_ms=1549, p99_ms=1693
+WINDOW_STATS:3> window_start=2026-03-09 16:45:55, window_end=2026-03-09 16:46:00, records=7451, avg_latency_ms=819.15, p50_ms=806, p95_ms=1558, p99_ms=1697
+WINDOW_STATS:7> window_start=2026-03-09 16:45:55, window_end=2026-03-09 16:46:00, records=7999, avg_latency_ms=815.73, p50_ms=809, p95_ms=1550, p99_ms=1691
+WINDOW_STATS:3> window_start=2026-03-09 16:46:00, window_end=2026-03-09 16:46:05, records=6989, avg_latency_ms=809.36, p50_ms=800, p95_ms=1568, p99_ms=1699
+WINDOW_STATS:7> window_start=2026-03-09 16:46:00, window_end=2026-03-09 16:46:05, records=6999, avg_latency_ms=807.49, p50_ms=800, p95_ms=1574, p99_ms=1695
+WINDOW_STATS:3> window_start=2026-03-09 16:46:00, window_end=2026-03-09 16:46:05, records=7009, avg_latency_ms=808.37, p50_ms=799, p95_ms=1578, p99_ms=1713
+WINDOW_STATS:2> window_start=2026-03-09 16:46:00, window_end=2026-03-09 16:46:05, records=7999, avg_latency_ms=817.46, p50_ms=794, p95_ms=1583, p99_ms=1705
+WINDOW_STATS:3> window_start=2026-03-09 16:46:05, window_end=2026-03-09 16:46:10, records=7509, avg_latency_ms=812.33, p50_ms=801, p95_ms=1539, p99_ms=1669
+WINDOW_STATS:2> window_start=2026-03-09 16:46:05, window_end=2026-03-09 16:46:10, records=6999, avg_latency_ms=799.82, p50_ms=790, p95_ms=1530, p99_ms=1677
+WINDOW_STATS:3> window_start=2026-03-09 16:46:05, window_end=2026-03-09 16:46:10, records=7489, avg_latency_ms=813.80, p50_ms=808, p95_ms=1542, p99_ms=1673
+WINDOW_STATS:7> window_start=2026-03-09 16:46:05, window_end=2026-03-09 16:46:10, records=7999, avg_latency_ms=802.87, p50_ms=783, p95_ms=1537, p99_ms=1673
+WINDOW_STATS:3> window_start=2026-03-09 16:46:10, window_end=2026-03-09 16:46:15, records=7863, avg_latency_ms=810.33, p50_ms=805, p95_ms=1511, p99_ms=1656
+WINDOW_STATS:7> window_start=2026-03-09 16:46:10, window_end=2026-03-09 16:46:15, records=6999, avg_latency_ms=801.36, p50_ms=795, p95_ms=1491, p99_ms=1624
+WINDOW_STATS:3> window_start=2026-03-09 16:46:10, window_end=2026-03-09 16:46:15, records=7917, avg_latency_ms=799.07, p50_ms=788, p95_ms=1513, p99_ms=1650
+WINDOW_STATS:2> window_start=2026-03-09 16:46:10, window_end=2026-03-09 16:46:15, records=7714, avg_latency_ms=809.20, p50_ms=811, p95_ms=1486, p99_ms=1629
+WINDOW_STATS:3> window_start=2026-03-09 16:46:15, window_end=2026-03-09 16:46:20, records=7097, avg_latency_ms=814.84, p50_ms=800, p95_ms=1572, p99_ms=1741
+WINDOW_STATS:7> window_start=2026-03-09 16:46:15, window_end=2026-03-09 16:46:20, records=6999, avg_latency_ms=823.81, p50_ms=811, p95_ms=1588, p99_ms=1748
+WINDOW_STATS:2> window_start=2026-03-09 16:46:15, window_end=2026-03-09 16:46:20, records=7284, avg_latency_ms=818.29, p50_ms=804, p95_ms=1580, p99_ms=1734
+WINDOW_STATS:3> window_start=2026-03-09 16:46:15, window_end=2026-03-09 16:46:20, records=7119, avg_latency_ms=807.96, p50_ms=792, p95_ms=1578, p99_ms=1714
+WINDOW_STATS:3> window_start=2026-03-09 16:46:20, window_end=2026-03-09 16:46:25, records=7443, avg_latency_ms=830.30, p50_ms=824, p95_ms=1594, p99_ms=1713
+WINDOW_STATS:2> window_start=2026-03-09 16:46:20, window_end=2026-03-09 16:46:25, records=6999, avg_latency_ms=810.44, p50_ms=789, p95_ms=1580, p99_ms=1707
+WINDOW_STATS:3> window_start=2026-03-09 16:46:20, window_end=2026-03-09 16:46:25, records=7341, avg_latency_ms=823.97, p50_ms=816, p95_ms=1591, p99_ms=1722
+WINDOW_STATS:7> window_start=2026-03-09 16:46:20, window_end=2026-03-09 16:46:25, records=7999, avg_latency_ms=830.82, p50_ms=817, p95_ms=1595, p99_ms=1714
+WINDOW_STATS:7> window_start=2026-03-09 16:46:25, window_end=2026-03-09 16:46:30, records=6999, avg_latency_ms=789.62, p50_ms=779, p95_ms=1482, p99_ms=1649
+WINDOW_STATS:3> window_start=2026-03-09 16:46:25, window_end=2026-03-09 16:46:30, records=7159, avg_latency_ms=787.26, p50_ms=777, p95_ms=1480, p99_ms=1644
+WINDOW_STATS:3> window_start=2026-03-09 16:46:25, window_end=2026-03-09 16:46:30, records=7053, avg_latency_ms=801.88, p50_ms=792, p95_ms=1483, p99_ms=1645
+WINDOW_STATS:2> window_start=2026-03-09 16:46:25, window_end=2026-03-09 16:46:30, records=7757, avg_latency_ms=804.63, p50_ms=797, p95_ms=1502, p99_ms=1660
+WINDOW_STATS:3> window_start=2026-03-09 16:46:30, window_end=2026-03-09 16:46:35, records=8065, avg_latency_ms=823.01, p50_ms=813, p95_ms=1548, p99_ms=1698
+WINDOW_STATS:2> window_start=2026-03-09 16:46:30, window_end=2026-03-09 16:46:35, records=7241, avg_latency_ms=817.79, p50_ms=803, p95_ms=1538, p99_ms=1671
+WINDOW_STATS:3> window_start=2026-03-09 16:46:30, window_end=2026-03-09 16:46:35, records=7933, avg_latency_ms=820.35, p50_ms=810, p95_ms=1542, p99_ms=1682
+WINDOW_STATS:7> window_start=2026-03-09 16:46:30, window_end=2026-03-09 16:46:35, records=7104, avg_latency_ms=806.90, p50_ms=796, p95_ms=1533, p99_ms=1693
+WINDOW_STATS:7> window_start=2026-03-09 16:46:35, window_end=2026-03-09 16:46:40, records=7894, avg_latency_ms=821.70, p50_ms=805, p95_ms=1560, p99_ms=1699
+WINDOW_STATS:3> window_start=2026-03-09 16:46:35, window_end=2026-03-09 16:46:40, records=7505, avg_latency_ms=814.21, p50_ms=803, p95_ms=1557, p99_ms=1713
+WINDOW_STATS:3> window_start=2026-03-09 16:46:35, window_end=2026-03-09 16:46:40, records=7493, avg_latency_ms=815.01, p50_ms=803, p95_ms=1545, p99_ms=1695
+WINDOW_STATS:2> window_start=2026-03-09 16:46:35, window_end=2026-03-09 16:46:40, records=7999, avg_latency_ms=816.66, p50_ms=798, p95_ms=1555, p99_ms=1705
+WINDOW_STATS:3> window_start=2026-03-09 16:46:40, window_end=2026-03-09 16:46:45, records=7517, avg_latency_ms=825.00, p50_ms=827, p95_ms=1525, p99_ms=1641
+WINDOW_STATS:2> window_start=2026-03-09 16:46:40, window_end=2026-03-09 16:46:45, records=6999, avg_latency_ms=808.04, p50_ms=795, p95_ms=1516, p99_ms=1640
+WINDOW_STATS:3> window_start=2026-03-09 16:46:40, window_end=2026-03-09 16:46:45, records=7481, avg_latency_ms=817.42, p50_ms=813, p95_ms=1517, p99_ms=1645
+WINDOW_STATS:7> window_start=2026-03-09 16:46:40, window_end=2026-03-09 16:46:45, records=7999, avg_latency_ms=807.16, p50_ms=795, p95_ms=1509, p99_ms=1645
+WINDOW_STATS:7> window_start=2026-03-09 16:46:45, window_end=2026-03-09 16:46:50, records=6999, avg_latency_ms=828.17, p50_ms=803, p95_ms=1603, p99_ms=1770
+WINDOW_STATS:3> window_start=2026-03-09 16:46:45, window_end=2026-03-09 16:46:50, records=7483, avg_latency_ms=803.68, p50_ms=776, p95_ms=1592, p99_ms=1769
+WINDOW_STATS:3> window_start=2026-03-09 16:46:45, window_end=2026-03-09 16:46:50, records=7515, avg_latency_ms=821.20, p50_ms=803, p95_ms=1591, p99_ms=1765
+WINDOW_STATS:2> window_start=2026-03-09 16:46:45, window_end=2026-03-09 16:46:50, records=6999, avg_latency_ms=828.95, p50_ms=825, p95_ms=1571, p99_ms=1768
+WINDOW_STATS:3> window_start=2026-03-09 16:46:50, window_end=2026-03-09 16:46:55, records=6949, avg_latency_ms=817.20, p50_ms=797, p95_ms=1597, p99_ms=1765
+WINDOW_STATS:7> window_start=2026-03-09 16:46:50, window_end=2026-03-09 16:46:55, records=6999, avg_latency_ms=805.89, p50_ms=778, p95_ms=1584, p99_ms=1752
+WINDOW_STATS:3> window_start=2026-03-09 16:46:50, window_end=2026-03-09 16:46:55, records=7049, avg_latency_ms=812.48, p50_ms=793, p95_ms=1601, p99_ms=1759
+WINDOW_STATS:2> window_start=2026-03-09 16:46:50, window_end=2026-03-09 16:46:55, records=7942, avg_latency_ms=825.81, p50_ms=806, p95_ms=1619, p99_ms=1765
+WINDOW_STATS:7> window_start=2026-03-09 16:46:55, window_end=2026-03-09 16:47:00, records=6999, avg_latency_ms=817.76, p50_ms=801, p95_ms=1608, p99_ms=1756
+WINDOW_STATS:2> window_start=2026-03-09 16:46:55, window_end=2026-03-09 16:47:00, records=7056, avg_latency_ms=813.66, p50_ms=807, p95_ms=1580, p99_ms=1726
+WINDOW_STATS:3> window_start=2026-03-09 16:46:55, window_end=2026-03-09 16:47:00, records=7373, avg_latency_ms=827.50, p50_ms=813, p95_ms=1610, p99_ms=1752
+WINDOW_STATS:3> window_start=2026-03-09 16:46:55, window_end=2026-03-09 16:47:00, records=7362, avg_latency_ms=828.36, p50_ms=804, p95_ms=1612, p99_ms=1760
+WINDOW_STATS:3> window_start=2026-03-09 16:47:00, window_end=2026-03-09 16:47:05, records=7093, avg_latency_ms=835.28, p50_ms=825, p95_ms=1587, p99_ms=1720
+WINDOW_STATS:2> window_start=2026-03-09 16:47:00, window_end=2026-03-09 16:47:05, records=6999, avg_latency_ms=806.25, p50_ms=776, p95_ms=1577, p99_ms=1726
+WINDOW_STATS:3> window_start=2026-03-09 16:47:00, window_end=2026-03-09 16:47:05, records=7168, avg_latency_ms=825.90, p50_ms=811, p95_ms=1579, p99_ms=1721
+WINDOW_STATS:7> window_start=2026-03-09 16:47:00, window_end=2026-03-09 16:47:05, records=7557, avg_latency_ms=828.64, p50_ms=804, p95_ms=1594, p99_ms=1735
+WINDOW_STATS:3> window_start=2026-03-09 16:47:05, window_end=2026-03-09 16:47:10, records=7547, avg_latency_ms=821.68, p50_ms=808, p95_ms=1595, p99_ms=1749
+WINDOW_STATS:3> window_start=2026-03-09 16:47:05, window_end=2026-03-09 16:47:10, records=7451, avg_latency_ms=819.97, p50_ms=799, p95_ms=1604, p99_ms=1749
+WINDOW_STATS:2> window_start=2026-03-09 16:47:05, window_end=2026-03-09 16:47:10, records=7999, avg_latency_ms=829.60, p50_ms=811, p95_ms=1608, p99_ms=1747
+WINDOW_STATS:7> window_start=2026-03-09 16:47:05, window_end=2026-03-09 16:47:10, records=7441, avg_latency_ms=827.29, p50_ms=820, p95_ms=1610, p99_ms=1749
+WINDOW_STATS:3> window_start=2026-03-09 16:47:10, window_end=2026-03-09 16:47:15, records=7002, avg_latency_ms=850.22, p50_ms=830, p95_ms=1649, p99_ms=1839
+WINDOW_STATS:3> window_start=2026-03-09 16:47:10, window_end=2026-03-09 16:47:15, records=6996, avg_latency_ms=861.76, p50_ms=851, p95_ms=1647, p99_ms=1841
+WINDOW_STATS:2> window_start=2026-03-09 16:47:10, window_end=2026-03-09 16:47:15, records=6999, avg_latency_ms=851.45, p50_ms=828, p95_ms=1644, p99_ms=1854
+WINDOW_STATS:7> window_start=2026-03-09 16:47:10, window_end=2026-03-09 16:47:15, records=6999, avg_latency_ms=839.54, p50_ms=820, p95_ms=1639, p99_ms=1841
+WINDOW_STATS:7> window_start=2026-03-09 16:47:15, window_end=2026-03-09 16:47:20, records=6999, avg_latency_ms=823.27, p50_ms=809, p95_ms=1562, p99_ms=1698
+WINDOW_STATS:3> window_start=2026-03-09 16:47:15, window_end=2026-03-09 16:47:20, records=7011, avg_latency_ms=818.95, p50_ms=814, p95_ms=1566, p99_ms=1691
+WINDOW_STATS:2> window_start=2026-03-09 16:47:15, window_end=2026-03-09 16:47:20, records=6999, avg_latency_ms=826.09, p50_ms=820, p95_ms=1572, p99_ms=1689
+WINDOW_STATS:3> window_start=2026-03-09 16:47:15, window_end=2026-03-09 16:47:20, records=6987, avg_latency_ms=808.24, p50_ms=791, p95_ms=1564, p99_ms=1704
+WINDOW_STATS:3> window_start=2026-03-09 16:47:20, window_end=2026-03-09 16:47:25, records=7934, avg_latency_ms=830.83, p50_ms=824, p95_ms=1563, p99_ms=1692
+WINDOW_STATS:3> window_start=2026-03-09 16:47:20, window_end=2026-03-09 16:47:25, records=8018, avg_latency_ms=827.68, p50_ms=826, p95_ms=1560, p99_ms=1699
+WINDOW_STATS:2> window_start=2026-03-09 16:47:20, window_end=2026-03-09 16:47:25, records=6999, avg_latency_ms=813.69, p50_ms=813, p95_ms=1529, p99_ms=1688
+WINDOW_STATS:7> window_start=2026-03-09 16:47:20, window_end=2026-03-09 16:47:25, records=7310, avg_latency_ms=816.46, p50_ms=810, p95_ms=1549, p99_ms=1688
+WINDOW_STATS:2> window_start=2026-03-09 16:47:25, window_end=2026-03-09 16:47:30, records=7999, avg_latency_ms=820.83, p50_ms=825, p95_ms=1513, p99_ms=1668
+WINDOW_STATS:3> window_start=2026-03-09 16:47:25, window_end=2026-03-09 16:47:30, records=7554, avg_latency_ms=797.80, p50_ms=788, p95_ms=1495, p99_ms=1642
+WINDOW_STATS:3> window_start=2026-03-09 16:47:25, window_end=2026-03-09 16:47:30, records=7490, avg_latency_ms=798.17, p50_ms=785, p95_ms=1494, p99_ms=1655
+WINDOW_STATS:7> window_start=2026-03-09 16:47:25, window_end=2026-03-09 16:47:30, records=7688, avg_latency_ms=818.10, p50_ms=809, p95_ms=1526, p99_ms=1681
+WINDOW_STATS:3> window_start=2026-03-09 16:47:30, window_end=2026-03-09 16:47:35, records=6999, avg_latency_ms=825.31, p50_ms=809, p95_ms=1560, p99_ms=1698
+WINDOW_STATS:7> window_start=2026-03-09 16:47:30, window_end=2026-03-09 16:47:35, records=6999, avg_latency_ms=836.32, p50_ms=827, p95_ms=1563, p99_ms=1705
+WINDOW_STATS:2> window_start=2026-03-09 16:47:30, window_end=2026-03-09 16:47:35, records=6999, avg_latency_ms=844.38, p50_ms=841, p95_ms=1570, p99_ms=1688
+WINDOW_STATS:3> window_start=2026-03-09 16:47:30, window_end=2026-03-09 16:47:35, records=6999, avg_latency_ms=833.41, p50_ms=822, p95_ms=1562, p99_ms=1683
+WINDOW_STATS:3> window_start=2026-03-09 16:47:35, window_end=2026-03-09 16:47:40, records=8053, avg_latency_ms=814.25, p50_ms=809, p95_ms=1530, p99_ms=1662
+WINDOW_STATS:7> window_start=2026-03-09 16:47:35, window_end=2026-03-09 16:47:40, records=7999, avg_latency_ms=792.46, p50_ms=778, p95_ms=1493, p99_ms=1638
+WINDOW_STATS:2> window_start=2026-03-09 16:47:35, window_end=2026-03-09 16:47:40, records=7999, avg_latency_ms=800.61, p50_ms=796, p95_ms=1512, p99_ms=1647
+WINDOW_STATS:3> window_start=2026-03-09 16:47:35, window_end=2026-03-09 16:47:40, records=7945, avg_latency_ms=816.37, p50_ms=815, p95_ms=1528, p99_ms=1648
+WINDOW_STATS:2> window_start=2026-03-09 16:47:40, window_end=2026-03-09 16:47:45, records=6999, avg_latency_ms=808.14, p50_ms=798, p95_ms=1530, p99_ms=1682
+WINDOW_STATS:3> window_start=2026-03-09 16:47:40, window_end=2026-03-09 16:47:45, records=7556, avg_latency_ms=797.54, p50_ms=787, p95_ms=1509, p99_ms=1668
+WINDOW_STATS:7> window_start=2026-03-09 16:47:40, window_end=2026-03-09 16:47:45, records=7999, avg_latency_ms=810.24, p50_ms=797, p95_ms=1537, p99_ms=1680
+WINDOW_STATS:3> window_start=2026-03-09 16:47:40, window_end=2026-03-09 16:47:45, records=7479, avg_latency_ms=790.51, p50_ms=777, p95_ms=1503, p99_ms=1659
+WINDOW_STATS:7> window_start=2026-03-09 16:47:45, window_end=2026-03-09 16:47:50, records=6999, avg_latency_ms=821.08, p50_ms=824, p95_ms=1502, p99_ms=1639
+WINDOW_STATS:3> window_start=2026-03-09 16:47:45, window_end=2026-03-09 16:47:50, records=7587, avg_latency_ms=815.85, p50_ms=816, p95_ms=1510, p99_ms=1639
+WINDOW_STATS:2> window_start=2026-03-09 16:47:45, window_end=2026-03-09 16:47:50, records=7999, avg_latency_ms=815.76, p50_ms=811, p95_ms=1520, p99_ms=1642
+WINDOW_STATS:3> window_start=2026-03-09 16:47:45, window_end=2026-03-09 16:47:50, records=7374, avg_latency_ms=810.52, p50_ms=803, p95_ms=1512, p99_ms=1637
+WINDOW_STATS:7> window_start=2026-03-09 16:47:50, window_end=2026-03-09 16:47:55, records=7999, avg_latency_ms=828.19, p50_ms=825, p95_ms=1563, p99_ms=1703
+WINDOW_STATS:3> window_start=2026-03-09 16:47:50, window_end=2026-03-09 16:47:55, records=6960, avg_latency_ms=819.41, p50_ms=814, p95_ms=1537, p99_ms=1705
+WINDOW_STATS:3> window_start=2026-03-09 16:47:50, window_end=2026-03-09 16:47:55, records=7038, avg_latency_ms=816.83, p50_ms=820, p95_ms=1537, p99_ms=1700
+WINDOW_STATS:2> window_start=2026-03-09 16:47:50, window_end=2026-03-09 16:47:55, records=7999, avg_latency_ms=825.90, p50_ms=826, p95_ms=1559, p99_ms=1690
+WINDOW_STATS:7> window_start=2026-03-09 16:47:55, window_end=2026-03-09 16:48:00, records=6999, avg_latency_ms=807.70, p50_ms=798, p95_ms=1534, p99_ms=1681
+WINDOW_STATS:3> window_start=2026-03-09 16:47:55, window_end=2026-03-09 16:48:00, records=8091, avg_latency_ms=810.32, p50_ms=796, p95_ms=1558, p99_ms=1691
+WINDOW_STATS:3> window_start=2026-03-09 16:47:55, window_end=2026-03-09 16:48:00, records=7907, avg_latency_ms=819.03, p50_ms=798, p95_ms=1573, p99_ms=1705
+WINDOW_STATS:2> window_start=2026-03-09 16:47:55, window_end=2026-03-09 16:48:00, records=6999, avg_latency_ms=819.02, p50_ms=815, p95_ms=1540, p99_ms=1689
+WINDOW_STATS:2> window_start=2026-03-09 16:48:00, window_end=2026-03-09 16:48:05, records=6999, avg_latency_ms=801.44, p50_ms=772, p95_ms=1563, p99_ms=1693
+WINDOW_STATS:3> window_start=2026-03-09 16:48:00, window_end=2026-03-09 16:48:05, records=7511, avg_latency_ms=810.03, p50_ms=796, p95_ms=1548, p99_ms=1692
+WINDOW_STATS:7> window_start=2026-03-09 16:48:00, window_end=2026-03-09 16:48:05, records=7999, avg_latency_ms=815.13, p50_ms=799, p95_ms=1556, p99_ms=1694
+WINDOW_STATS:3> window_start=2026-03-09 16:48:00, window_end=2026-03-09 16:48:05, records=7487, avg_latency_ms=807.12, p50_ms=799, p95_ms=1557, p99_ms=1691
+WINDOW_STATS:2> window_start=2026-03-09 16:48:05, window_end=2026-03-09 16:48:10, records=7999, avg_latency_ms=806.52, p50_ms=797, p95_ms=1493, p99_ms=1626
+WINDOW_STATS:3> window_start=2026-03-09 16:48:05, window_end=2026-03-09 16:48:10, records=7280, avg_latency_ms=823.13, p50_ms=822, p95_ms=1525, p99_ms=1634
+WINDOW_STATS:3> window_start=2026-03-09 16:48:05, window_end=2026-03-09 16:48:10, records=7419, avg_latency_ms=831.23, p50_ms=836, p95_ms=1533, p99_ms=1645
+WINDOW_STATS:7> window_start=2026-03-09 16:48:05, window_end=2026-03-09 16:48:10, records=7645, avg_latency_ms=835.67, p50_ms=847, p95_ms=1525, p99_ms=1645
+WINDOW_STATS:3> window_start=2026-03-09 16:48:10, window_end=2026-03-09 16:48:15, records=7648, avg_latency_ms=802.00, p50_ms=794, p95_ms=1525, p99_ms=1686
+WINDOW_STATS:3> window_start=2026-03-09 16:48:10, window_end=2026-03-09 16:48:15, records=7649, avg_latency_ms=805.31, p50_ms=804, p95_ms=1527, p99_ms=1687
+WINDOW_STATS:7> window_start=2026-03-09 16:48:10, window_end=2026-03-09 16:48:15, records=7353, avg_latency_ms=804.80, p50_ms=791, p95_ms=1531, p99_ms=1683
+WINDOW_STATS:2> window_start=2026-03-09 16:48:10, window_end=2026-03-09 16:48:15, records=7460, avg_latency_ms=829.96, p50_ms=830, p95_ms=1542, p99_ms=1690
+WINDOW_STATS:3> window_start=2026-03-09 16:48:15, window_end=2026-03-09 16:48:20, records=6492, avg_latency_ms=893.19, p50_ms=861, p95_ms=1726, p99_ms=1889
+WINDOW_STATS:3> window_start=2026-03-09 16:48:15, window_end=2026-03-09 16:48:20, records=6506, avg_latency_ms=895.01, p50_ms=868, p95_ms=1727, p99_ms=1889
+WINDOW_STATS:2> window_start=2026-03-09 16:48:15, window_end=2026-03-09 16:48:20, records=7538, avg_latency_ms=888.89, p50_ms=856, p95_ms=1715, p99_ms=1881
+WINDOW_STATS:7> window_start=2026-03-09 16:48:15, window_end=2026-03-09 16:48:20, records=6555, avg_latency_ms=872.51, p50_ms=830, p95_ms=1701, p99_ms=1879
+WINDOW_STATS:3> window_start=2026-03-09 16:48:20, window_end=2026-03-09 16:48:25, records=6965, avg_latency_ms=840.10, p50_ms=818, p95_ms=1631, p99_ms=1800
+WINDOW_STATS:3> window_start=2026-03-09 16:48:20, window_end=2026-03-09 16:48:25, records=6787, avg_latency_ms=843.58, p50_ms=821, p95_ms=1639, p99_ms=1800
+WINDOW_STATS:7> window_start=2026-03-09 16:48:20, window_end=2026-03-09 16:48:25, records=7443, avg_latency_ms=861.65, p50_ms=841, p95_ms=1679, p99_ms=1814
+WINDOW_STATS:2> window_start=2026-03-09 16:48:20, window_end=2026-03-09 16:48:25, records=6551, avg_latency_ms=848.69, p50_ms=823, p95_ms=1645, p99_ms=1814
+WINDOW_STATS:3> window_start=2026-03-09 16:48:25, window_end=2026-03-09 16:48:30, records=7180, avg_latency_ms=831.79, p50_ms=809, p95_ms=1618, p99_ms=1743
+WINDOW_STATS:7> window_start=2026-03-09 16:48:25, window_end=2026-03-09 16:48:30, records=5999, avg_latency_ms=842.75, p50_ms=811, p95_ms=1636, p99_ms=1763
+WINDOW_STATS:3> window_start=2026-03-09 16:48:25, window_end=2026-03-09 16:48:30, records=7064, avg_latency_ms=835.29, p50_ms=813, p95_ms=1626, p99_ms=1744
+WINDOW_STATS:2> window_start=2026-03-09 16:48:25, window_end=2026-03-09 16:48:30, records=7447, avg_latency_ms=824.86, p50_ms=795, p95_ms=1619, p99_ms=1747
+WINDOW_STATS:3> window_start=2026-03-09 16:48:30, window_end=2026-03-09 16:48:35, records=7505, avg_latency_ms=851.03, p50_ms=830, p95_ms=1621, p99_ms=1761
+WINDOW_STATS:3> window_start=2026-03-09 16:48:30, window_end=2026-03-09 16:48:35, records=7493, avg_latency_ms=850.94, p50_ms=838, p95_ms=1634, p99_ms=1766
+WINDOW_STATS:7> window_start=2026-03-09 16:48:30, window_end=2026-03-09 16:48:35, records=7999, avg_latency_ms=824.21, p50_ms=803, p95_ms=1619, p99_ms=1776
+WINDOW_STATS:2> window_start=2026-03-09 16:48:30, window_end=2026-03-09 16:48:35, records=6999, avg_latency_ms=838.02, p50_ms=821, p95_ms=1622, p99_ms=1778
+WINDOW_STATS:7> window_start=2026-03-09 16:48:35, window_end=2026-03-09 16:48:40, records=6999, avg_latency_ms=803.10, p50_ms=804, p95_ms=1527, p99_ms=1698
+WINDOW_STATS:3> window_start=2026-03-09 16:48:35, window_end=2026-03-09 16:48:40, records=7466, avg_latency_ms=799.71, p50_ms=793, p95_ms=1529, p99_ms=1706
+WINDOW_STATS:3> window_start=2026-03-09 16:48:35, window_end=2026-03-09 16:48:40, records=7532, avg_latency_ms=802.24, p50_ms=784, p95_ms=1554, p99_ms=1696
+WINDOW_STATS:2> window_start=2026-03-09 16:48:35, window_end=2026-03-09 16:48:40, records=6999, avg_latency_ms=802.89, p50_ms=791, p95_ms=1546, p99_ms=1694
+WINDOW_STATS:3> window_start=2026-03-09 16:48:40, window_end=2026-03-09 16:48:45, records=7546, avg_latency_ms=797.82, p50_ms=795, p95_ms=1521, p99_ms=1658
+WINDOW_STATS:2> window_start=2026-03-09 16:48:40, window_end=2026-03-09 16:48:45, records=7999, avg_latency_ms=814.67, p50_ms=809, p95_ms=1555, p99_ms=1674
+WINDOW_STATS:7> window_start=2026-03-09 16:48:40, window_end=2026-03-09 16:48:45, records=7999, avg_latency_ms=809.30, p50_ms=795, p95_ms=1547, p99_ms=1677
+WINDOW_STATS:3> window_start=2026-03-09 16:48:40, window_end=2026-03-09 16:48:45, records=7452, avg_latency_ms=797.10, p50_ms=781, p95_ms=1529, p99_ms=1656
+WINDOW_STATS:3> window_start=2026-03-09 16:48:45, window_end=2026-03-09 16:48:50, records=7596, avg_latency_ms=801.19, p50_ms=793, p95_ms=1511, p99_ms=1641
+WINDOW_STATS:3> window_start=2026-03-09 16:48:45, window_end=2026-03-09 16:48:50, records=7402, avg_latency_ms=792.50, p50_ms=776, p95_ms=1500, p99_ms=1630
+WINDOW_STATS:2> window_start=2026-03-09 16:48:45, window_end=2026-03-09 16:48:50, records=7999, avg_latency_ms=794.65, p50_ms=788, p95_ms=1488, p99_ms=1617
+WINDOW_STATS:7> window_start=2026-03-09 16:48:45, window_end=2026-03-09 16:48:50, records=7999, avg_latency_ms=803.41, p50_ms=798, p95_ms=1493, p99_ms=1636
+WINDOW_STATS:2> window_start=2026-03-09 16:48:50, window_end=2026-03-09 16:48:55, records=6999, avg_latency_ms=805.41, p50_ms=794, p95_ms=1517, p99_ms=1654
+WINDOW_STATS:7> window_start=2026-03-09 16:48:50, window_end=2026-03-09 16:48:55, records=6999, avg_latency_ms=810.95, p50_ms=813, p95_ms=1511, p99_ms=1642
+WINDOW_STATS:3> window_start=2026-03-09 16:48:50, window_end=2026-03-09 16:48:55, records=7413, avg_latency_ms=797.44, p50_ms=776, p95_ms=1494, p99_ms=1647
+WINDOW_STATS:3> window_start=2026-03-09 16:48:50, window_end=2026-03-09 16:48:55, records=7585, avg_latency_ms=806.64, p50_ms=806, p95_ms=1511, p99_ms=1643
+WINDOW_STATS:3> window_start=2026-03-09 16:48:55, window_end=2026-03-09 16:49:00, records=7589, avg_latency_ms=807.50, p50_ms=806, p95_ms=1515, p99_ms=1658
+WINDOW_STATS:3> window_start=2026-03-09 16:48:55, window_end=2026-03-09 16:49:00, records=7409, avg_latency_ms=808.86, p50_ms=810, p95_ms=1516, p99_ms=1659
+WINDOW_STATS:2> window_start=2026-03-09 16:48:55, window_end=2026-03-09 16:49:00, records=7999, avg_latency_ms=808.80, p50_ms=800, p95_ms=1534, p99_ms=1667
+WINDOW_STATS:7> window_start=2026-03-09 16:48:55, window_end=2026-03-09 16:49:00, records=7999, avg_latency_ms=806.45, p50_ms=796, p95_ms=1535, p99_ms=1666
+WINDOW_STATS:2> window_start=2026-03-09 16:49:00, window_end=2026-03-09 16:49:05, records=6999, avg_latency_ms=813.97, p50_ms=794, p95_ms=1545, p99_ms=1692
+WINDOW_STATS:3> window_start=2026-03-09 16:49:00, window_end=2026-03-09 16:49:05, records=8078, avg_latency_ms=805.79, p50_ms=789, p95_ms=1543, p99_ms=1701
+WINDOW_STATS:3> window_start=2026-03-09 16:49:00, window_end=2026-03-09 16:49:05, records=7920, avg_latency_ms=801.86, p50_ms=785, p95_ms=1542, p99_ms=1699
+WINDOW_STATS:7> window_start=2026-03-09 16:49:00, window_end=2026-03-09 16:49:05, records=6999, avg_latency_ms=802.33, p50_ms=794, p95_ms=1536, p99_ms=1686
+WINDOW_STATS:7> window_start=2026-03-09 16:49:05, window_end=2026-03-09 16:49:10, records=6999, avg_latency_ms=805.40, p50_ms=787, p95_ms=1565, p99_ms=1709
+WINDOW_STATS:2> window_start=2026-03-09 16:49:05, window_end=2026-03-09 16:49:10, records=6999, avg_latency_ms=792.41, p50_ms=775, p95_ms=1553, p99_ms=1696
+WINDOW_STATS:3> window_start=2026-03-09 16:49:05, window_end=2026-03-09 16:49:10, records=6896, avg_latency_ms=807.54, p50_ms=799, p95_ms=1556, p99_ms=1703
+WINDOW_STATS:3> window_start=2026-03-09 16:49:05, window_end=2026-03-09 16:49:10, records=7102, avg_latency_ms=804.51, p50_ms=802, p95_ms=1550, p99_ms=1708
+WINDOW_STATS:3> window_start=2026-03-09 16:49:10, window_end=2026-03-09 16:49:15, records=7483, avg_latency_ms=798.70, p50_ms=791, p95_ms=1553, p99_ms=1675
+WINDOW_STATS:7> window_start=2026-03-09 16:49:10, window_end=2026-03-09 16:49:15, records=7999, avg_latency_ms=822.91, p50_ms=818, p95_ms=1552, p99_ms=1676
+WINDOW_STATS:3> window_start=2026-03-09 16:49:10, window_end=2026-03-09 16:49:15, records=7515, avg_latency_ms=799.63, p50_ms=777, p95_ms=1548, p99_ms=1673
+WINDOW_STATS:2> window_start=2026-03-09 16:49:10, window_end=2026-03-09 16:49:15, records=7999, avg_latency_ms=812.69, p50_ms=796, p95_ms=1554, p99_ms=1684
+WINDOW_STATS:7> window_start=2026-03-09 16:49:15, window_end=2026-03-09 16:49:20, records=6999, avg_latency_ms=785.74, p50_ms=776, p95_ms=1481, p99_ms=1629
+WINDOW_STATS:2> window_start=2026-03-09 16:49:15, window_end=2026-03-09 16:49:20, records=6999, avg_latency_ms=801.35, p50_ms=805, p95_ms=1475, p99_ms=1631
+WINDOW_STATS:3> window_start=2026-03-09 16:49:15, window_end=2026-03-09 16:49:20, records=7981, avg_latency_ms=802.56, p50_ms=800, p95_ms=1498, p99_ms=1636
+WINDOW_STATS:3> window_start=2026-03-09 16:49:15, window_end=2026-03-09 16:49:20, records=8017, avg_latency_ms=797.68, p50_ms=792, p95_ms=1483, p99_ms=1629
+WINDOW_STATS:3> window_start=2026-03-09 16:49:20, window_end=2026-03-09 16:49:25, records=7590, avg_latency_ms=801.47, p50_ms=789, p95_ms=1527, p99_ms=1654
+WINDOW_STATS:7> window_start=2026-03-09 16:49:20, window_end=2026-03-09 16:49:25, records=7999, avg_latency_ms=810.36, p50_ms=808, p95_ms=1528, p99_ms=1656
+WINDOW_STATS:3> window_start=2026-03-09 16:49:20, window_end=2026-03-09 16:49:25, records=7408, avg_latency_ms=806.32, p50_ms=793, p95_ms=1536, p99_ms=1657
+WINDOW_STATS:2> window_start=2026-03-09 16:49:20, window_end=2026-03-09 16:49:25, records=7999, avg_latency_ms=803.51, p50_ms=796, p95_ms=1520, p99_ms=1650
+WINDOW_STATS:7> window_start=2026-03-09 16:49:25, window_end=2026-03-09 16:49:30, records=6999, avg_latency_ms=793.67, p50_ms=791, p95_ms=1478, p99_ms=1627
+WINDOW_STATS:3> window_start=2026-03-09 16:49:25, window_end=2026-03-09 16:49:30, records=7486, avg_latency_ms=796.22, p50_ms=797, p95_ms=1483, p99_ms=1617
+WINDOW_STATS:2> window_start=2026-03-09 16:49:25, window_end=2026-03-09 16:49:30, records=6999, avg_latency_ms=792.88, p50_ms=786, p95_ms=1490, p99_ms=1633
+WINDOW_STATS:3> window_start=2026-03-09 16:49:25, window_end=2026-03-09 16:49:30, records=7512, avg_latency_ms=800.28, p50_ms=798, p95_ms=1493, p99_ms=1623
+WINDOW_STATS:3> window_start=2026-03-09 16:49:30, window_end=2026-03-09 16:49:35, records=7514, avg_latency_ms=815.06, p50_ms=816, p95_ms=1510, p99_ms=1641
+WINDOW_STATS:7> window_start=2026-03-09 16:49:30, window_end=2026-03-09 16:49:35, records=7999, avg_latency_ms=798.44, p50_ms=792, p95_ms=1490, p99_ms=1628
+WINDOW_STATS:2> window_start=2026-03-09 16:49:30, window_end=2026-03-09 16:49:35, records=7999, avg_latency_ms=789.45, p50_ms=781, p95_ms=1482, p99_ms=1629
+WINDOW_STATS:3> window_start=2026-03-09 16:49:30, window_end=2026-03-09 16:49:35, records=7484, avg_latency_ms=814.15, p50_ms=814, p95_ms=1520, p99_ms=1647
+WINDOW_STATS:3> window_start=2026-03-09 16:49:35, window_end=2026-03-09 16:49:40, records=7468, avg_latency_ms=788.83, p50_ms=770, p95_ms=1512, p99_ms=1658
+WINDOW_STATS:7> window_start=2026-03-09 16:49:35, window_end=2026-03-09 16:49:40, records=7999, avg_latency_ms=807.61, p50_ms=789, p95_ms=1519, p99_ms=1663
+WINDOW_STATS:3> window_start=2026-03-09 16:49:35, window_end=2026-03-09 16:49:40, records=7530, avg_latency_ms=790.29, p50_ms=780, p95_ms=1498, p99_ms=1663
+WINDOW_STATS:2> window_start=2026-03-09 16:49:35, window_end=2026-03-09 16:49:40, records=7999, avg_latency_ms=810.38, p50_ms=807, p95_ms=1517, p99_ms=1663
+WINDOW_STATS:3> window_start=2026-03-09 16:49:40, window_end=2026-03-09 16:49:45, records=7511, avg_latency_ms=814.84, p50_ms=806, p95_ms=1475, p99_ms=1597
+WINDOW_STATS:2> window_start=2026-03-09 16:49:40, window_end=2026-03-09 16:49:45, records=6999, avg_latency_ms=801.43, p50_ms=797, p95_ms=1464, p99_ms=1593
+WINDOW_STATS:7> window_start=2026-03-09 16:49:40, window_end=2026-03-09 16:49:45, records=7999, avg_latency_ms=805.46, p50_ms=806, p95_ms=1472, p99_ms=1589
+WINDOW_STATS:3> window_start=2026-03-09 16:49:40, window_end=2026-03-09 16:49:45, records=7487, avg_latency_ms=800.08, p50_ms=796, p95_ms=1469, p99_ms=1592
+WINDOW_STATS:2> window_start=2026-03-09 16:49:45, window_end=2026-03-09 16:49:50, records=7999, avg_latency_ms=801.17, p50_ms=798, p95_ms=1508, p99_ms=1634
+WINDOW_STATS:3> window_start=2026-03-09 16:49:45, window_end=2026-03-09 16:49:50, records=8066, avg_latency_ms=812.30, p50_ms=812, p95_ms=1523, p99_ms=1654
+WINDOW_STATS:3> window_start=2026-03-09 16:49:45, window_end=2026-03-09 16:49:50, records=7932, avg_latency_ms=811.63, p50_ms=809, p95_ms=1513, p99_ms=1649
+WINDOW_STATS:7> window_start=2026-03-09 16:49:45, window_end=2026-03-09 16:49:50, records=7999, avg_latency_ms=815.66, p50_ms=813, p95_ms=1517, p99_ms=1639
+WINDOW_STATS:7> window_start=2026-03-09 16:49:50, window_end=2026-03-09 16:49:55, records=6999, avg_latency_ms=800.06, p50_ms=785, p95_ms=1515, p99_ms=1663
+WINDOW_STATS:3> window_start=2026-03-09 16:49:50, window_end=2026-03-09 16:49:55, records=7422, avg_latency_ms=790.06, p50_ms=774, p95_ms=1511, p99_ms=1652
+WINDOW_STATS:3> window_start=2026-03-09 16:49:50, window_end=2026-03-09 16:49:55, records=7576, avg_latency_ms=797.07, p50_ms=789, p95_ms=1512, p99_ms=1644
+WINDOW_STATS:2> window_start=2026-03-09 16:49:50, window_end=2026-03-09 16:49:55, records=7999, avg_latency_ms=805.50, p50_ms=797, p95_ms=1527, p99_ms=1664
+WINDOW_STATS:7> window_start=2026-03-09 16:49:55, window_end=2026-03-09 16:50:00, records=6999, avg_latency_ms=808.42, p50_ms=801, p95_ms=1514, p99_ms=1652
+WINDOW_STATS:3> window_start=2026-03-09 16:49:55, window_end=2026-03-09 16:50:00, records=7600, avg_latency_ms=812.08, p50_ms=799, p95_ms=1528, p99_ms=1664
+WINDOW_STATS:3> window_start=2026-03-09 16:49:55, window_end=2026-03-09 16:50:00, records=7398, avg_latency_ms=804.80, p50_ms=798, p95_ms=1513, p99_ms=1651
+WINDOW_STATS:2> window_start=2026-03-09 16:49:55, window_end=2026-03-09 16:50:00, records=7999, avg_latency_ms=800.46, p50_ms=787, p95_ms=1517, p99_ms=1653
+WINDOW_STATS:2> window_start=2026-03-09 16:50:00, window_end=2026-03-09 16:50:05, records=6999, avg_latency_ms=801.45, p50_ms=794, p95_ms=1506, p99_ms=1651
+WINDOW_STATS:3> window_start=2026-03-09 16:50:00, window_end=2026-03-09 16:50:05, records=7457, avg_latency_ms=808.51, p50_ms=794, p95_ms=1522, p99_ms=1658
+WINDOW_STATS:7> window_start=2026-03-09 16:50:00, window_end=2026-03-09 16:50:05, records=7999, avg_latency_ms=811.05, p50_ms=801, p95_ms=1515, p99_ms=1644
+WINDOW_STATS:3> window_start=2026-03-09 16:50:00, window_end=2026-03-09 16:50:05, records=7541, avg_latency_ms=812.96, p50_ms=806, p95_ms=1526, p99_ms=1666
+WINDOW_STATS:7> window_start=2026-03-09 16:50:05, window_end=2026-03-09 16:50:10, records=6999, avg_latency_ms=816.16, p50_ms=814, p95_ms=1564, p99_ms=1710
+WINDOW_STATS:3> window_start=2026-03-09 16:50:05, window_end=2026-03-09 16:50:10, records=7506, avg_latency_ms=814.08, p50_ms=811, p95_ms=1558, p99_ms=1700
+WINDOW_STATS:3> window_start=2026-03-09 16:50:05, window_end=2026-03-09 16:50:10, records=7492, avg_latency_ms=816.29, p50_ms=814, p95_ms=1563, p99_ms=1715
+WINDOW_STATS:2> window_start=2026-03-09 16:50:05, window_end=2026-03-09 16:50:10, records=7999, avg_latency_ms=814.60, p50_ms=807, p95_ms=1548, p99_ms=1699
+WINDOW_STATS:2> window_start=2026-03-09 16:50:10, window_end=2026-03-09 16:50:15, records=6999, avg_latency_ms=800.47, p50_ms=793, p95_ms=1464, p99_ms=1620
+WINDOW_STATS:3> window_start=2026-03-09 16:50:10, window_end=2026-03-09 16:50:15, records=7495, avg_latency_ms=788.98, p50_ms=774, p95_ms=1476, p99_ms=1621
+WINDOW_STATS:7> window_start=2026-03-09 16:50:10, window_end=2026-03-09 16:50:15, records=7999, avg_latency_ms=794.19, p50_ms=780, p95_ms=1495, p99_ms=1636
+WINDOW_STATS:3> window_start=2026-03-09 16:50:10, window_end=2026-03-09 16:50:15, records=7503, avg_latency_ms=798.00, p50_ms=788, p95_ms=1492, p99_ms=1619
+WINDOW_STATS:3> window_start=2026-03-09 16:50:15, window_end=2026-03-09 16:50:20, records=7944, avg_latency_ms=810.09, p50_ms=805, p95_ms=1515, p99_ms=1650
+WINDOW_STATS:2> window_start=2026-03-09 16:50:15, window_end=2026-03-09 16:50:20, records=7999, avg_latency_ms=807.20, p50_ms=807, p95_ms=1511, p99_ms=1639
+WINDOW_STATS:3> window_start=2026-03-09 16:50:15, window_end=2026-03-09 16:50:20, records=7954, avg_latency_ms=809.80, p50_ms=804, p95_ms=1519, p99_ms=1655
+WINDOW_STATS:7> window_start=2026-03-09 16:50:15, window_end=2026-03-09 16:50:20, records=7999, avg_latency_ms=813.30, p50_ms=809, p95_ms=1513, p99_ms=1639
+WINDOW_STATS:3> window_start=2026-03-09 16:50:20, window_end=2026-03-09 16:50:25, records=7054, avg_latency_ms=810.15, p50_ms=795, p95_ms=1533, p99_ms=1672
+WINDOW_STATS:2> window_start=2026-03-09 16:50:20, window_end=2026-03-09 16:50:25, records=6999, avg_latency_ms=824.91, p50_ms=816, p95_ms=1536, p99_ms=1685
+WINDOW_STATS:7> window_start=2026-03-09 16:50:20, window_end=2026-03-09 16:50:25, records=6999, avg_latency_ms=818.74, p50_ms=810, p95_ms=1551, p99_ms=1710
+WINDOW_STATS:3> window_start=2026-03-09 16:50:20, window_end=2026-03-09 16:50:25, records=7044, avg_latency_ms=813.00, p50_ms=809, p95_ms=1520, p99_ms=1685
+WINDOW_STATS:3> window_start=2026-03-09 16:50:25, window_end=2026-03-09 16:50:30, records=7462, avg_latency_ms=805.62, p50_ms=791, p95_ms=1531, p99_ms=1660
+WINDOW_STATS:2> window_start=2026-03-09 16:50:25, window_end=2026-03-09 16:50:30, records=7999, avg_latency_ms=800.50, p50_ms=787, p95_ms=1510, p99_ms=1649
+WINDOW_STATS:3> window_start=2026-03-09 16:50:25, window_end=2026-03-09 16:50:30, records=7536, avg_latency_ms=805.17, p50_ms=789, p95_ms=1524, p99_ms=1654
+WINDOW_STATS:7> window_start=2026-03-09 16:50:25, window_end=2026-03-09 16:50:30, records=7999, avg_latency_ms=817.83, p50_ms=813, p95_ms=1540, p99_ms=1675
+WINDOW_STATS:7> window_start=2026-03-09 16:50:30, window_end=2026-03-09 16:50:35, records=6999, avg_latency_ms=788.91, p50_ms=785, p95_ms=1509, p99_ms=1661
+WINDOW_STATS:3> window_start=2026-03-09 16:50:30, window_end=2026-03-09 16:50:35, records=7970, avg_latency_ms=798.92, p50_ms=792, p95_ms=1522, p99_ms=1664
+WINDOW_STATS:3> window_start=2026-03-09 16:50:30, window_end=2026-03-09 16:50:35, records=8028, avg_latency_ms=801.39, p50_ms=796, p95_ms=1515, p99_ms=1679
+WINDOW_STATS:2> window_start=2026-03-09 16:50:30, window_end=2026-03-09 16:50:35, records=7999, avg_latency_ms=795.61, p50_ms=789, p95_ms=1511, p99_ms=1642
+WINDOW_STATS:3> window_start=2026-03-09 16:50:35, window_end=2026-03-09 16:50:40, records=7542, avg_latency_ms=803.89, p50_ms=801, p95_ms=1521, p99_ms=1656
+WINDOW_STATS:2> window_start=2026-03-09 16:50:35, window_end=2026-03-09 16:50:40, records=6999, avg_latency_ms=789.36, p50_ms=781, p95_ms=1492, p99_ms=1637
+WINDOW_STATS:3> window_start=2026-03-09 16:50:35, window_end=2026-03-09 16:50:40, records=7456, avg_latency_ms=806.07, p50_ms=805, p95_ms=1502, p99_ms=1641
+WINDOW_STATS:7> window_start=2026-03-09 16:50:35, window_end=2026-03-09 16:50:40, records=7999, avg_latency_ms=809.22, p50_ms=808, p95_ms=1509, p99_ms=1645
+WINDOW_STATS:3> window_start=2026-03-09 16:50:40, window_end=2026-03-09 16:50:45, records=7479, avg_latency_ms=795.42, p50_ms=797, p95_ms=1492, p99_ms=1619
+WINDOW_STATS:7> window_start=2026-03-09 16:50:40, window_end=2026-03-09 16:50:45, records=6999, avg_latency_ms=817.24, p50_ms=816, p95_ms=1511, p99_ms=1632
+WINDOW_STATS:2> window_start=2026-03-09 16:50:40, window_end=2026-03-09 16:50:45, records=7999, avg_latency_ms=810.72, p50_ms=810, p95_ms=1524, p99_ms=1643
+WINDOW_STATS:3> window_start=2026-03-09 16:50:40, window_end=2026-03-09 16:50:45, records=7519, avg_latency_ms=801.23, p50_ms=797, p95_ms=1512, p99_ms=1624
+WINDOW_STATS:2> window_start=2026-03-09 16:50:45, window_end=2026-03-09 16:50:50, records=6999, avg_latency_ms=811.35, p50_ms=804, p95_ms=1556, p99_ms=1706
+WINDOW_STATS:3> window_start=2026-03-09 16:50:45, window_end=2026-03-09 16:50:50, records=7476, avg_latency_ms=818.55, p50_ms=810, p95_ms=1568, p99_ms=1715
+WINDOW_STATS:7> window_start=2026-03-09 16:50:45, window_end=2026-03-09 16:50:50, records=7999, avg_latency_ms=817.99, p50_ms=796, p95_ms=1569, p99_ms=1702
+WINDOW_STATS:3> window_start=2026-03-09 16:50:45, window_end=2026-03-09 16:50:50, records=7522, avg_latency_ms=828.18, p50_ms=809, p95_ms=1577, p99_ms=1719
+WINDOW_STATS:3> window_start=2026-03-09 16:50:50, window_end=2026-03-09 16:50:55, records=7522, avg_latency_ms=799.62, p50_ms=794, p95_ms=1509, p99_ms=1639
+WINDOW_STATS:3> window_start=2026-03-09 16:50:50, window_end=2026-03-09 16:50:55, records=7476, avg_latency_ms=801.95, p50_ms=804, p95_ms=1517, p99_ms=1642
+WINDOW_STATS:2> window_start=2026-03-09 16:50:50, window_end=2026-03-09 16:50:55, records=7999, avg_latency_ms=807.50, p50_ms=802, p95_ms=1532, p99_ms=1660
+WINDOW_STATS:7> window_start=2026-03-09 16:50:50, window_end=2026-03-09 16:50:55, records=7999, avg_latency_ms=805.20, p50_ms=800, p95_ms=1515, p99_ms=1649
+WINDOW_STATS:7> window_start=2026-03-09 16:50:55, window_end=2026-03-09 16:51:00, records=6999, avg_latency_ms=789.70, p50_ms=789, p95_ms=1472, p99_ms=1622
+WINDOW_STATS:2> window_start=2026-03-09 16:50:55, window_end=2026-03-09 16:51:00, records=6999, avg_latency_ms=796.15, p50_ms=782, p95_ms=1484, p99_ms=1619
+WINDOW_STATS:3> window_start=2026-03-09 16:50:55, window_end=2026-03-09 16:51:00, records=7372, avg_latency_ms=795.15, p50_ms=788, p95_ms=1488, p99_ms=1615
+WINDOW_STATS:3> window_start=2026-03-09 16:50:55, window_end=2026-03-09 16:51:00, records=7626, avg_latency_ms=803.91, p50_ms=800, p95_ms=1497, p99_ms=1624
+WINDOW_STATS:3> window_start=2026-03-09 16:51:00, window_end=2026-03-09 16:51:05, records=7569, avg_latency_ms=804.01, p50_ms=786, p95_ms=1526, p99_ms=1684
+WINDOW_STATS:2> window_start=2026-03-09 16:51:00, window_end=2026-03-09 16:51:05, records=7999, avg_latency_ms=816.18, p50_ms=810, p95_ms=1539, p99_ms=1676
+WINDOW_STATS:7> window_start=2026-03-09 16:51:00, window_end=2026-03-09 16:51:05, records=7999, avg_latency_ms=805.45, p50_ms=793, p95_ms=1532, p99_ms=1675
+WINDOW_STATS:3> window_start=2026-03-09 16:51:00, window_end=2026-03-09 16:51:05, records=7429, avg_latency_ms=804.76, p50_ms=791, p95_ms=1519, p99_ms=1681
+WINDOW_STATS:7> window_start=2026-03-09 16:51:05, window_end=2026-03-09 16:51:10, records=6999, avg_latency_ms=811.36, p50_ms=804, p95_ms=1524, p99_ms=1669
+WINDOW_STATS:3> window_start=2026-03-09 16:51:05, window_end=2026-03-09 16:51:10, records=7592, avg_latency_ms=807.79, p50_ms=797, p95_ms=1525, p99_ms=1669
+WINDOW_STATS:3> window_start=2026-03-09 16:51:05, window_end=2026-03-09 16:51:10, records=7406, avg_latency_ms=802.36, p50_ms=794, p95_ms=1523, p99_ms=1669
+WINDOW_STATS:2> window_start=2026-03-09 16:51:05, window_end=2026-03-09 16:51:10, records=7999, avg_latency_ms=807.32, p50_ms=798, p95_ms=1518, p99_ms=1669
+WINDOW_STATS:3> window_start=2026-03-09 16:51:10, window_end=2026-03-09 16:51:15, records=7581, avg_latency_ms=800.59, p50_ms=804, p95_ms=1497, p99_ms=1618
+WINDOW_STATS:7> window_start=2026-03-09 16:51:10, window_end=2026-03-09 16:51:15, records=7999, avg_latency_ms=802.31, p50_ms=798, p95_ms=1505, p99_ms=1623
+WINDOW_STATS:2> window_start=2026-03-09 16:51:10, window_end=2026-03-09 16:51:15, records=6999, avg_latency_ms=805.06, p50_ms=808, p95_ms=1470, p99_ms=1610
+WINDOW_STATS:3> window_start=2026-03-09 16:51:10, window_end=2026-03-09 16:51:15, records=7417, avg_latency_ms=796.32, p50_ms=792, p95_ms=1490, p99_ms=1618
+WINDOW_STATS:3> window_start=2026-03-09 16:51:15, window_end=2026-03-09 16:51:20, records=7028, avg_latency_ms=846.12, p50_ms=829, p95_ms=1603, p99_ms=1759
+WINDOW_STATS:7> window_start=2026-03-09 16:51:15, window_end=2026-03-09 16:51:20, records=6999, avg_latency_ms=839.51, p50_ms=823, p95_ms=1608, p99_ms=1759
+WINDOW_STATS:3> window_start=2026-03-09 16:51:15, window_end=2026-03-09 16:51:20, records=6970, avg_latency_ms=847.40, p50_ms=836, p95_ms=1617, p99_ms=1764
+WINDOW_STATS:2> window_start=2026-03-09 16:51:15, window_end=2026-03-09 16:51:20, records=7892, avg_latency_ms=833.51, p50_ms=817, p95_ms=1601, p99_ms=1742
+WINDOW_STATS:3> window_start=2026-03-09 16:51:20, window_end=2026-03-09 16:51:25, records=7502, avg_latency_ms=811.10, p50_ms=787, p95_ms=1596, p99_ms=1737
+WINDOW_STATS:7> window_start=2026-03-09 16:51:20, window_end=2026-03-09 16:51:25, records=6999, avg_latency_ms=815.51, p50_ms=802, p95_ms=1594, p99_ms=1752
+WINDOW_STATS:3> window_start=2026-03-09 16:51:20, window_end=2026-03-09 16:51:25, records=7496, avg_latency_ms=818.47, p50_ms=806, p95_ms=1596, p99_ms=1742
+WINDOW_STATS:2> window_start=2026-03-09 16:51:20, window_end=2026-03-09 16:51:25, records=7106, avg_latency_ms=828.97, p50_ms=816, p95_ms=1614, p99_ms=1756
+WINDOW_STATS:2> window_start=2026-03-09 16:51:25, window_end=2026-03-09 16:51:30, records=5999, avg_latency_ms=842.43, p50_ms=829, p95_ms=1692, p99_ms=1842
+WINDOW_STATS:7> window_start=2026-03-09 16:51:25, window_end=2026-03-09 16:51:30, records=6999, avg_latency_ms=867.72, p50_ms=855, p95_ms=1694, p99_ms=1833
+WINDOW_STATS:3> window_start=2026-03-09 16:51:25, window_end=2026-03-09 16:51:30, records=6546, avg_latency_ms=861.29, p50_ms=844, p95_ms=1705, p99_ms=1838
+WINDOW_STATS:3> window_start=2026-03-09 16:51:25, window_end=2026-03-09 16:51:30, records=6452, avg_latency_ms=852.11, p50_ms=838, p95_ms=1697, p99_ms=1825
+WINDOW_STATS:3> window_start=2026-03-09 16:51:30, window_end=2026-03-09 16:51:35, records=6710, avg_latency_ms=897.78, p50_ms=860, p95_ms=1780, p99_ms=1910
+WINDOW_STATS:2> window_start=2026-03-09 16:51:30, window_end=2026-03-09 16:51:35, records=6744, avg_latency_ms=897.35, p50_ms=860, p95_ms=1792, p99_ms=1929
+WINDOW_STATS:7> window_start=2026-03-09 16:51:30, window_end=2026-03-09 16:51:35, records=6999, avg_latency_ms=903.27, p50_ms=868, p95_ms=1773, p99_ms=1913
+WINDOW_STATS:3> window_start=2026-03-09 16:51:30, window_end=2026-03-09 16:51:35, records=6843, avg_latency_ms=899.17, p50_ms=863, p95_ms=1792, p99_ms=1921
+WINDOW_STATS:2> window_start=2026-03-09 16:51:35, window_end=2026-03-09 16:51:40, records=7254, avg_latency_ms=910.62, p50_ms=868, p95_ms=1765, p99_ms=1897
+WINDOW_STATS:3> window_start=2026-03-09 16:51:35, window_end=2026-03-09 16:51:40, records=7201, avg_latency_ms=920.70, p50_ms=887, p95_ms=1761, p99_ms=1912
+WINDOW_STATS:7> window_start=2026-03-09 16:51:35, window_end=2026-03-09 16:51:40, records=6999, avg_latency_ms=913.88, p50_ms=877, p95_ms=1761, p99_ms=1890
+WINDOW_STATS:3> window_start=2026-03-09 16:51:35, window_end=2026-03-09 16:51:40, records=7242, avg_latency_ms=918.98, p50_ms=884, p95_ms=1760, p99_ms=1904
+WINDOW_STATS:2> window_start=2026-03-09 16:51:40, window_end=2026-03-09 16:51:45, records=6999, avg_latency_ms=796.95, p50_ms=776, p95_ms=1560, p99_ms=1703
+WINDOW_STATS:7> window_start=2026-03-09 16:51:40, window_end=2026-03-09 16:51:45, records=6999, avg_latency_ms=811.71, p50_ms=803, p95_ms=1561, p99_ms=1716
+WINDOW_STATS:3> window_start=2026-03-09 16:51:40, window_end=2026-03-09 16:51:45, records=6557, avg_latency_ms=805.49, p50_ms=792, p95_ms=1557, p99_ms=1707
+WINDOW_STATS:3> window_start=2026-03-09 16:51:40, window_end=2026-03-09 16:51:45, records=6518, avg_latency_ms=798.73, p50_ms=782, p95_ms=1553, p99_ms=1698
+WINDOW_STATS:2> window_start=2026-03-09 16:51:45, window_end=2026-03-09 16:51:50, records=6999, avg_latency_ms=833.16, p50_ms=819, p95_ms=1584, p99_ms=1726
+WINDOW_STATS:3> window_start=2026-03-09 16:51:45, window_end=2026-03-09 16:51:50, records=8081, avg_latency_ms=823.68, p50_ms=793, p95_ms=1578, p99_ms=1734
+WINDOW_STATS:7> window_start=2026-03-09 16:51:45, window_end=2026-03-09 16:51:50, records=6999, avg_latency_ms=819.70, p50_ms=803, p95_ms=1570, p99_ms=1751
+WINDOW_STATS:3> window_start=2026-03-09 16:51:45, window_end=2026-03-09 16:51:50, records=7840, avg_latency_ms=821.48, p50_ms=804, p95_ms=1582, p99_ms=1747
+WINDOW_STATS:2> window_start=2026-03-09 16:51:50, window_end=2026-03-09 16:51:55, records=7999, avg_latency_ms=825.82, p50_ms=813, p95_ms=1563, p99_ms=1708
+WINDOW_STATS:7> window_start=2026-03-09 16:51:50, window_end=2026-03-09 16:51:55, records=7999, avg_latency_ms=827.95, p50_ms=821, p95_ms=1566, p99_ms=1709
+WINDOW_STATS:3> window_start=2026-03-09 16:51:50, window_end=2026-03-09 16:51:55, records=7540, avg_latency_ms=837.74, p50_ms=839, p95_ms=1564, p99_ms=1720
+WINDOW_STATS:3> window_start=2026-03-09 16:51:50, window_end=2026-03-09 16:51:55, records=7458, avg_latency_ms=832.98, p50_ms=827, p95_ms=1564, p99_ms=1716
+WINDOW_STATS:3> window_start=2026-03-09 16:51:55, window_end=2026-03-09 16:52:00, records=7007, avg_latency_ms=791.39, p50_ms=781, p95_ms=1538, p99_ms=1682
+WINDOW_STATS:3> window_start=2026-03-09 16:51:55, window_end=2026-03-09 16:52:00, records=6991, avg_latency_ms=793.26, p50_ms=780, p95_ms=1544, p99_ms=1693
+WINDOW_STATS:7> window_start=2026-03-09 16:51:55, window_end=2026-03-09 16:52:00, records=7808, avg_latency_ms=816.95, p50_ms=805, p95_ms=1553, p99_ms=1692
+WINDOW_STATS:2> window_start=2026-03-09 16:51:55, window_end=2026-03-09 16:52:00, records=7733, avg_latency_ms=812.25, p50_ms=796, p95_ms=1560, p99_ms=1694
+WINDOW_STATS:3> window_start=2026-03-09 16:52:00, window_end=2026-03-09 16:52:05, records=7936, avg_latency_ms=835.91, p50_ms=822, p95_ms=1544, p99_ms=1659
+WINDOW_STATS:7> window_start=2026-03-09 16:52:00, window_end=2026-03-09 16:52:05, records=7190, avg_latency_ms=819.87, p50_ms=816, p95_ms=1514, p99_ms=1641
+WINDOW_STATS:3> window_start=2026-03-09 16:52:00, window_end=2026-03-09 16:52:05, records=8062, avg_latency_ms=833.68, p50_ms=825, p95_ms=1536, p99_ms=1666
+WINDOW_STATS:2> window_start=2026-03-09 16:52:00, window_end=2026-03-09 16:52:05, records=7265, avg_latency_ms=827.23, p50_ms=826, p95_ms=1511, p99_ms=1643
+WINDOW_STATS:3> window_start=2026-03-09 16:52:05, window_end=2026-03-09 16:52:10, records=7484, avg_latency_ms=819.17, p50_ms=808, p95_ms=1521, p99_ms=1665
+WINDOW_STATS:2> window_start=2026-03-09 16:52:05, window_end=2026-03-09 16:52:10, records=7999, avg_latency_ms=818.51, p50_ms=808, p95_ms=1529, p99_ms=1657
+WINDOW_STATS:3> window_start=2026-03-09 16:52:05, window_end=2026-03-09 16:52:10, records=7514, avg_latency_ms=825.06, p50_ms=821, p95_ms=1522, p99_ms=1657
+WINDOW_STATS:7> window_start=2026-03-09 16:52:05, window_end=2026-03-09 16:52:10, records=7999, avg_latency_ms=823.31, p50_ms=817, p95_ms=1523, p99_ms=1652
+WINDOW_STATS:2> window_start=2026-03-09 16:52:10, window_end=2026-03-09 16:52:15, records=6999, avg_latency_ms=804.55, p50_ms=792, p95_ms=1555, p99_ms=1683
+WINDOW_STATS:3> window_start=2026-03-09 16:52:10, window_end=2026-03-09 16:52:15, records=7083, avg_latency_ms=807.22, p50_ms=796, p95_ms=1542, p99_ms=1681
+WINDOW_STATS:7> window_start=2026-03-09 16:52:10, window_end=2026-03-09 16:52:15, records=6999, avg_latency_ms=826.95, p50_ms=826, p95_ms=1553, p99_ms=1678
+WINDOW_STATS:3> window_start=2026-03-09 16:52:10, window_end=2026-03-09 16:52:15, records=6915, avg_latency_ms=802.91, p50_ms=797, p95_ms=1529, p99_ms=1676
+WINDOW_STATS:3> window_start=2026-03-09 16:52:15, window_end=2026-03-09 16:52:20, records=7887, avg_latency_ms=832.62, p50_ms=816, p95_ms=1598, p99_ms=1732
+WINDOW_STATS:7> window_start=2026-03-09 16:52:15, window_end=2026-03-09 16:52:20, records=6999, avg_latency_ms=805.80, p50_ms=790, p95_ms=1566, p99_ms=1722
+WINDOW_STATS:3> window_start=2026-03-09 16:52:15, window_end=2026-03-09 16:52:20, records=8111, avg_latency_ms=825.11, p50_ms=814, p95_ms=1581, p99_ms=1732
+WINDOW_STATS:2> window_start=2026-03-09 16:52:15, window_end=2026-03-09 16:52:20, records=7999, avg_latency_ms=825.70, p50_ms=812, p95_ms=1586, p99_ms=1731
+Traceback (most recent call last):
+  File "/Users/mdtahsinsharif/ece1724_project/Benchmark-Streaming-Databases/flink/flink_with_kafka/flink_consumer.py", line 149, in <module>
+  File "/Users/mdtahsinsharif/ece1724_project/Benchmark-Streaming-Databases/flink_env/lib/python3.9/site-packages/pyflink/datastream/stream_execution_environment.py", line 773, in execute
+    return JobExecutionResult(self._j_stream_execution_environment.execute(j_stream_graph))
+  File "/Users/mdtahsinsharif/ece1724_project/Benchmark-Streaming-Databases/flink_env/lib/python3.9/site-packages/py4j/java_gateway.py", line 1321, in __call__
+    answer = self.gateway_client.send_command(command)
+  File "/Users/mdtahsinsharif/ece1724_project/Benchmark-Streaming-Databases/flink_env/lib/python3.9/site-packages/py4j/java_gateway.py", line 1038, in send_command
+    response = connection.send_command(command)
+  File "/Users/mdtahsinsharif/ece1724_project/Benchmark-Streaming-Databases/flink_env/lib/python3.9/site-packages/py4j/java_gateway.py", line 1217, in send_command
+    answer = smart_decode(self.stream.readline()[:-1])
+  File "/opt/homebrew/Cellar/python@3.9/3.9.22_1/Frameworks/Python.framework/Versions/3.9/lib/python3.9/socket.py", line 716, in readinto
+    return self._sock.recv_into(b)
+KeyboardInterrupt
