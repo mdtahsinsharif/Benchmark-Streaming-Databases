@@ -22,14 +22,19 @@ producer = KafkaProducer(
 
 regions = ["north", "south", "east", "west"]
 
+# adjust this to control the throughput
+messages_per_second = 100  # desired message rate per second
+delay = 0.01 / messages_per_second
+
 while True:
-
     now = int(time.time() * 1000)
-
     event = {
         "region": random.choice(regions),
-        "amount": random.randint(1,100),
+        "amount": random.randint(1, 100),
         "event_time": now
     }
 
     producer.send("sales", event)
+
+    # throttle to avoid Kafka backpressure
+    time.sleep(delay)
