@@ -1,3 +1,5 @@
-README
-1. spark/README
+README 
+1. spark/README - setup spark with kafka
+2. flink/flink_with_kafka/README - setup flink with kafka
 
+NOTE: kafka setup is the same across the 2. once setup , no need to repeat the kafka setup. 
