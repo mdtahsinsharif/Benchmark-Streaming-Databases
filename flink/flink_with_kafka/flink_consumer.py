@@ -1,18 +1,18 @@
 import json
 import time
+import numpy as np
 
 from pyflink.datastream import StreamExecutionEnvironment
 from pyflink.common import WatermarkStrategy
 from pyflink.common.serialization import SimpleStringSchema
 from pyflink.common.typeinfo import Types
+from pyflink.common.time import Time
+
 from pyflink.datastream.connectors.kafka import KafkaSource
 from pyflink.datastream.functions import MapFunction, ProcessFunction
 from pyflink.datastream.window import TumblingProcessingTimeWindows
-from pyflink.common.time import Time
+from pyflink.datastream.functions import WindowFunction
 from pyflink.datastream.functions import ReduceFunction
-#import pyflink
-#print(pyflink.__version__)
-
 
 # --------------------------------------------------
 # Environment
@@ -20,14 +20,12 @@ from pyflink.datastream.functions import ReduceFunction
 
 env = StreamExecutionEnvironment.get_execution_environment()
 
-#env.add_jars(
-#    "file:///mnt/c/Users/shari/OneDrive/Desktop/tahsin/uoft/ece1724/project/spark_local/flink/flink-connector-kafka_2.12-1.14.6.jar"
-#)
+# parallel pipeline
+env.set_parallelism(10)
 
-env.set_parallelism(1)
 
 # --------------------------------------------------
-# Kafka Source (Flink 2.x API)
+# Kafka Source
 # --------------------------------------------------
 
 kafka_source = (
@@ -39,11 +37,34 @@ kafka_source = (
     .build()
 )
 
-# Watermark Strategy (event_time is increasing)
+
+# --------------------------------------------------
+# Event Parser
+# --------------------------------------------------
+
+class ParseEvent(MapFunction):
+
+    def map(self, value):
+
+        data = json.loads(value)
+
+        return (
+            data["region"],
+            data["amount"],
+            data["event_time"]
+        )
+
+
+# --------------------------------------------------
+# Watermark Strategy
+# --------------------------------------------------
+
 watermark_strategy = (
     WatermarkStrategy
     .for_monotonous_timestamps()
+    .with_timestamp_assigner(lambda event, ts: event[2])
 )
+
 
 stream = env.from_source(
     kafka_source,
@@ -51,72 +72,112 @@ stream = env.from_source(
     source_name="KafkaSource"
 )
 
-# --------------------------------------------------
-# Parse JSON + Extract Event Time
-# --------------------------------------------------
 
-class ParseEvent(MapFunction):
-    def map(self, value):
-        data = json.loads(value)
-        return (
-            data["region"],
-            data["amount"],
-            data["event_time"]
-        )
-
-parsed = stream.map(
+parsed_stream = stream.map(
     ParseEvent(),
-    output_type=Types.TUPLE([Types.STRING(), Types.INT(), Types.LONG()])
+    output_type=Types.TUPLE([
+        Types.STRING(),
+        Types.INT(),
+        Types.LONG()
+    ])
 )
 
+
 # --------------------------------------------------
-# E2E Latency (Measured at Sink Operator)
+# Latency Calculation (Producer → Sink)
 # --------------------------------------------------
 
-class ComputeLatency(ProcessFunction):
-    def process_element(self, value, ctx):
+class ComputeLatency(MapFunction):
+
+    def map(self, value):
+
         region, amount, event_time = value
-        sink_time = int(time.time() * 1000)
-        latency = sink_time - event_time
 
-        yield (
-            region,
-            amount,
-            latency
-        )
+        now = int(time.time() * 1000)
 
-latency_stream = parsed.process(
+        latency = now - event_time
+
+        return latency
+
+
+latency_stream = parsed_stream.map(
     ComputeLatency(),
-    output_type=Types.TUPLE([Types.STRING(), Types.INT(), Types.LONG()])
+    output_type=Types.LONG()
 )
 
+
 # --------------------------------------------------
-# Throughput (5 second window)
+# Percentile Latency Window
+# --------------------------------------------------
+
+class PercentileWindow(WindowFunction):
+
+    def apply(self, key, window, inputs):
+
+        # inputs is a list of ("lat", latency)
+        latencies = [x[1] for x in inputs]  # <-- extract numbers
+
+        if len(latencies) == 0:
+            return
+
+        arr = np.array(latencies, dtype=np.int64)
+
+        p50 = int(np.percentile(arr, 50))
+        p95 = int(np.percentile(arr, 95))
+        p99 = int(np.percentile(arr, 99))
+
+        yield f"count={len(arr)} p50={p50}ms p95={p95}ms p99={p99}ms"
+
+
+latency_stats = (
+    latency_stream
+    .map(lambda x: ("lat", x),
+         output_type=Types.TUPLE([Types.STRING(), Types.LONG()]))
+    .key_by(lambda x: x[0])
+    .window(TumblingProcessingTimeWindows.of(Time.seconds(5)))
+    .apply(PercentileWindow())
+)
+
+
+# --------------------------------------------------
+# Throughput Measurement
 # --------------------------------------------------
 '''
-throughput = (
-    parsed
-    .map(lambda x: 1, output_type=Types.INT())
-    .window_all(TumblingProcessingTimeWindows.of(Time.seconds(5)))
-    .sum(0)
+throughput_stream = (
+    parsed_stream
+    .map(lambda x: ("count", 1),
+         output_type=Types.TUPLE([Types.STRING(), Types.INT()]))
+    .key_by(lambda x: x[0])
+    .window(TumblingProcessingTimeWindows.of(Time.seconds(5)))
+    .sum(1)
 )'''
-
-class CountReduce(ReduceFunction):
+class SumReduce(ReduceFunction):
     def reduce(self, value1, value2):
-        return value1 + value2
+        # value = ("count", 1)
+        return (value1[0], value1[1] + value2[1])
 
-throughput = (
-    parsed
-    .map(lambda x: 1, output_type=Types.INT())
-    .window_all(TumblingProcessingTimeWindows.of(Time.seconds(5)))
-    .reduce(CountReduce(), output_type=Types.INT())
+
+throughput_stream = (
+    parsed_stream
+    .map(lambda x: ("count", 1),
+         output_type=Types.TUPLE([Types.STRING(), Types.INT()]))
+    .key_by(lambda x: x[0])
+    .window(TumblingProcessingTimeWindows.of(Time.seconds(5)))
+    .reduce(SumReduce())
 )
+
 
 # --------------------------------------------------
 # Output
 # --------------------------------------------------
 
-latency_stream.print("E2E_LATENCY")
-throughput.print("THROUGHPUT_5S")
+latency_stats.print("LATENCY_STATS")
 
-env.execute("Flink_2_2_E2E_Latency")
+throughput_stream.print("THROUGHPUT_5S")
+
+
+# --------------------------------------------------
+# Execute
+# --------------------------------------------------
+
+env.execute("Kafka_Flink_Benchmark")
