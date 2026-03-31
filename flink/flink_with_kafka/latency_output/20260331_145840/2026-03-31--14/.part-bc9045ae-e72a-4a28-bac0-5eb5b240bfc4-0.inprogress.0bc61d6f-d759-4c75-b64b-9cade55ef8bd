@@ -1,0 +1,2 @@
+window_start=2026-03-31 14:58:45, window_end=2026-03-31 14:58:50, records=4000, avg_latency_ms=1865259.87, p50_ms=1865296, p95_ms=1865977, p99_ms=1866107
+window_start=2026-03-31 14:58:50, window_end=2026-03-31 14:58:55, records=19999, avg_latency_ms=1863678.04, p50_ms=1863743, p95_ms=1865294, p99_ms=1865833

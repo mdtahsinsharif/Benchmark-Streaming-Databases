@@ -1,0 +1,15 @@
+window_start=2026-03-31 15:59:55, window_end=2026-03-31 16:00:00, records=10758, avg_latency_ms=2569934.30, p50_ms=2570058, p95_ms=2571552, p99_ms=2571706
+window_start=2026-03-31 16:00:00, window_end=2026-03-31 16:00:05, records=11406, avg_latency_ms=2573045.03, p50_ms=2573105, p95_ms=2574560, p99_ms=2574766
+window_start=2026-03-31 16:00:05, window_end=2026-03-31 16:00:10, records=11789, avg_latency_ms=2576210.73, p50_ms=2576296, p95_ms=2577862, p99_ms=2578045
+window_start=2026-03-31 16:00:10, window_end=2026-03-31 16:00:15, records=11802, avg_latency_ms=2579418.11, p50_ms=2579513, p95_ms=2580926, p99_ms=2581095
+window_start=2026-03-31 16:00:15, window_end=2026-03-31 16:00:20, records=10999, avg_latency_ms=2582601.27, p50_ms=2582665, p95_ms=2584083, p99_ms=2584275
+window_start=2026-03-31 16:00:20, window_end=2026-03-31 16:00:25, records=11999, avg_latency_ms=2585807.59, p50_ms=2585895, p95_ms=2587432, p99_ms=2588034
+window_start=2026-03-31 16:00:25, window_end=2026-03-31 16:00:30, records=11094, avg_latency_ms=2589016.55, p50_ms=2589054, p95_ms=2590409, p99_ms=2590900
+window_start=2026-03-31 16:00:30, window_end=2026-03-31 16:00:35, records=10904, avg_latency_ms=2591740.82, p50_ms=2591792, p95_ms=2593082, p99_ms=2593355
+window_start=2026-03-31 16:00:35, window_end=2026-03-31 16:00:40, records=11659, avg_latency_ms=2594530.71, p50_ms=2594534, p95_ms=2595943, p99_ms=2596353
+window_start=2026-03-31 16:00:40, window_end=2026-03-31 16:00:45, records=12339, avg_latency_ms=2597937.50, p50_ms=2597980, p95_ms=2599625, p99_ms=2600059
+window_start=2026-03-31 16:00:45, window_end=2026-03-31 16:00:50, records=11068, avg_latency_ms=2601171.70, p50_ms=2601193, p95_ms=2602596, p99_ms=2603247
+window_start=2026-03-31 16:00:50, window_end=2026-03-31 16:00:55, records=11930, avg_latency_ms=2604283.24, p50_ms=2604335, p95_ms=2606007, p99_ms=2606414
+window_start=2026-03-31 16:00:55, window_end=2026-03-31 16:01:00, records=11999, avg_latency_ms=2607509.60, p50_ms=2607593, p95_ms=2609036, p99_ms=2609237
+window_start=2026-03-31 16:01:00, window_end=2026-03-31 16:01:05, records=10999, avg_latency_ms=2610871.95, p50_ms=2611000, p95_ms=2612478, p99_ms=2612771
+window_start=2026-03-31 16:01:05, window_end=2026-03-31 16:01:10, records=11543, avg_latency_ms=2614070.07, p50_ms=2614125, p95_ms=2615687, p99_ms=2615992

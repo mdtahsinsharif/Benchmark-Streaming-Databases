@@ -1,0 +1,4 @@
+window_start=2026-03-31 14:58:45, window_end=2026-03-31 14:58:50, records=1777, avg_latency_ms=1865382.46, p50_ms=1865370, p95_ms=1865742, p99_ms=1865804
+window_start=2026-03-31 14:58:45, window_end=2026-03-31 14:58:50, records=1751, avg_latency_ms=1865377.59, p50_ms=1865369, p95_ms=1865719, p99_ms=1865798
+window_start=2026-03-31 14:58:50, window_end=2026-03-31 14:58:55, records=7433, avg_latency_ms=1864928.06, p50_ms=1864875, p95_ms=1865852, p99_ms=1866107
+window_start=2026-03-31 14:58:50, window_end=2026-03-31 14:58:55, records=7337, avg_latency_ms=1864928.91, p50_ms=1864878, p95_ms=1865835, p99_ms=1866100

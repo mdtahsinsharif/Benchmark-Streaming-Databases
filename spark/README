@@ -31,11 +31,13 @@ export PATH=$KAFKA_HOME/bin:$PATH
 
 8. In Terminal 3: kafka-topics.sh --create --topic sales --bootstrap-server localhost:9092 --partitions 3 --replication-factor 1 
 
-9. In Terminal 3: spark-submit   --deploy-mode client   --packages org.apache.spark:spark-sql-kafka-0-10_2.12:3.5.0   benchmark_spark.py
+9. 
 
-10. In Terminal 4: python3 producer.py
+10. In Terminal 3: spark-submit   --deploy-mode client   --packages org.apache.spark:spark-sql-kafka-0-10_2.12:3.5.0   benchmark_spark_continuous.py
 
-11. You can run multiple producers in multiple terminals to send more data to kafka
+11. In Terminal 4: python3 producer.py
 
-12. Watch terminal 3 output for 5 second window results. 
+12. You can run multiple producers in multiple terminals to send more data to kafka
+
+13. Watch terminal 3 output for 5 second window results. 
 Also view data in metrics/ dir. 

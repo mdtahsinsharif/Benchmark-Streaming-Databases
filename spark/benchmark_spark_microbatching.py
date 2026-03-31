@@ -10,36 +10,62 @@ import time, json
 # --------------------------------------------------
 # Function to log streaming metrics
 # --------------------------------------------------
-def log_streaming_metrics(query, log_file="stream_metrics.json"):
+# --------------------------------------------------
+# Function to log streaming metrics + window stats
+# --------------------------------------------------
+def log_streaming_metrics_per_batch(query, spark, log_file="metrics/spark_stream_metrics.json"):
     import threading
 
     def _logger():
+        last_logged_batch = -1
         while query.isActive:
             progress = query.lastProgress
             if progress is not None:
+                batch_id = progress["batchId"]
+                if batch_id != last_logged_batch:  # only log new batches
+                    last_logged_batch = batch_id
+                    base_metrics = {
+                        "timestamp": progress["timestamp"],
+                        "batchId": batch_id,
+                        "numInputRows": progress.get("numInputRows"),
+                        "inputRowsPerSecond": progress.get("inputRowsPerSecond"),
+                        "processedRowsPerSecond": progress.get("processedRowsPerSecond"),
+                        "batchDurationMs": progress.get("batchDuration"),
+                        "schedulerDelayMs": progress.get("durationMs", {}).get("schedulerDelay"),
+                        "processingDelayMs": progress.get("durationMs", {}).get("processingDelay"),
+                        "totalDurationMs": progress.get("durationMs", {}).get("totalDuration")
+                    }
 
-                metrics = {
-                    "timestamp": progress["timestamp"],
-                    "batchId": progress["batchId"],
-                    "numInputRows": progress.get("numInputRows"),
-                    "inputRowsPerSecond": progress.get("inputRowsPerSecond"),
-                    "processedRowsPerSecond": progress.get("processedRowsPerSecond"),
-                    "batchDurationMs": progress.get("batchDuration"),
-                    "schedulerDelayMs": progress.get("durationMs", {}).get("schedulerDelay"),
-                    "processingDelayMs": progress.get("durationMs", {}).get("processingDelay"),
-                    "totalDurationMs": progress.get("durationMs", {}).get("totalDuration")
-                }
+                    # Windowed metrics from memory sink
+                    try:
+                        window_metrics = spark.sql("""
+                            SELECT *
+                            FROM metrics_table
+                            ORDER BY window DESC
+                            LIMIT 1
+                        """).collect()
 
-                print("\nStreaming Metrics:")
-                print(json.dumps(metrics, indent=2))
+                        if window_metrics:
+                            row = window_metrics[0]
+                            base_metrics.update({
+                                "records": row.records,
+                                "p50_latency_ms": row.p50_latency_ms,
+                                "p95_latency_ms": row.p95_latency_ms,
+                                "p99_latency_ms": row.p99_latency_ms,
+                                "avg_latency_ms": row.avg_latency_ms,
+                                "throughput_rps": row.throughput_rps
+                            })
+                    except Exception as e:
+                        base_metrics["window_metrics_error"] = str(e)
 
-                with open(log_file, "a") as f:
-                    f.write(json.dumps(metrics) + "\n")
+                    # Print + write to file
+                    #print("\nStreaming Metrics (combined):")
+                    #print(json.dumps(base_metrics, indent=2))
+                    with open(log_file, "a") as f:
+                        f.write(json.dumps(base_metrics) + "\n")
 
-            time.sleep(5)
+    threading.Thread(target=_logger, daemon=True).start()
 
-    t = threading.Thread(target=_logger, daemon=True)
-    t.start()
 
 
 # --------------------------------------------------
@@ -51,7 +77,7 @@ spark = SparkSession.builder \
             "org.apache.spark:spark-sql-kafka-0-10_2.12:3.5.0") \
     .getOrCreate()
 
-spark.sparkContext.setLogLevel("WARN")
+spark.sparkContext.setLogLevel("ERROR")
 
 # parallelism similar to Flink job
 spark.conf.set("spark.default.parallelism", 10)
@@ -125,9 +151,9 @@ metrics_df = processed_df.groupBy(
 # Output Stream
 # --------------------------------------------------
 query = metrics_df.writeStream \
+    .format("memory") \
+    .queryName("metrics_table") \
     .outputMode("complete") \
-    .format("console") \
-    .option("truncate", "false") \
     .trigger(processingTime="100 milliseconds") \
     .start()
 
@@ -135,8 +161,7 @@ query = metrics_df.writeStream \
 # --------------------------------------------------
 # Log internal Spark metrics
 # --------------------------------------------------
-log_streaming_metrics(query, "metrics/spark_stream_metrics.json")
-
+log_streaming_metrics_per_batch(query, spark, "metrics/spark_stream_metrics.json")
 
 # --------------------------------------------------
 # Await termination
