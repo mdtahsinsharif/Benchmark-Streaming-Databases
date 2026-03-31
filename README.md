@@ -22,6 +22,7 @@ This repository contains benchmarking code for Spark and Flink streaming systems
    - For Spark, run `spark_config.sh`.
    - After running the config script, source your shell profile to apply environment changes:
      - `source ~/.bashrc` (or `source ~/.bash_profile` if you use that).
+   - Run `conda activate benchmark-streaming`
 
 3. After configuration is complete, start the benchmark workflow.
    - Run `start.sh`.
