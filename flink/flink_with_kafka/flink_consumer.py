@@ -17,7 +17,7 @@ from pyflink.common.serialization import Encoder
 # Environment
 # ------------------------------
 env = StreamExecutionEnvironment.get_execution_environment()
-env.set_parallelism(10)
+env.set_parallelism(8)
 
 # ------------------------------
 # Kafka Source

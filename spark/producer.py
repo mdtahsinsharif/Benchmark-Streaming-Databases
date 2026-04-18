@@ -23,14 +23,14 @@ producer = KafkaProducer(
 regions = ["north", "south", "east", "west"]
 
 # adjust this to control the throughput
-delay = 0.000001
+delay = 0.0001
 
 while True:
     now = int(time.time() * 1000)
     event = {
         "region": random.choice(regions),
         "amount": random.randint(1, 100),
-        "event_time": now
+        "event_time": now - 1000
     }
 
     producer.send("sales", event)
