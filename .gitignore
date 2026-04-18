@@ -1,3 +1,6 @@
 flink_env/
 flink-1.14.6/
 flink/simple_flink/flink-1.14.6-bin-scala_2.12.tgz
+*.DS_Store
+flink/.DS_Store
+spark/.DS_Store
