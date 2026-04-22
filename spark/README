@@ -1,3 +1,5 @@
+venv: conda activate flink-env
+
 Follow installation steps here: https://www.sparkcodehub.com/spark/streaming/streaming-start
 - kafka
 - spark
