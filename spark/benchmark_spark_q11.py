@@ -5,7 +5,7 @@ from pyspark.sql.functions import (
     current_timestamp,
     count,
     expr,
-    session_window
+    window
 )
 from pyspark.sql.types import (
     StructType,
@@ -16,17 +16,30 @@ from pyspark.sql.types import (
 )
 
 import json
+import threading
+
+import decimal
+import datetime
+
+def sanitize(obj):
+    if isinstance(obj, decimal.Decimal):
+        return float(obj)
+    if isinstance(obj, (datetime.datetime, datetime.date)):
+        return obj.isoformat()
+    if isinstance(obj, dict):
+        return {k: sanitize(v) for k, v in obj.items()}
+    if isinstance(obj, list):
+        return [sanitize(v) for v in obj]
+    return obj
 
 # --------------------------------------------------
-# Logger (FIXED for session windows)
+# Logger
 # --------------------------------------------------
 def log_streaming_metrics_per_batch(
     query,
     spark,
     log_file="metrics/spark_stream_metrics.json"
 ):
-    import threading
-
     def _logger():
         last_logged_batch = -1
 
@@ -34,18 +47,18 @@ def log_streaming_metrics_per_batch(
             progress = query.lastProgress
 
             if progress is not None:
-                batch_id = progress["batchId"]
+                batch_id = progress.get("batchId")
 
                 if batch_id != last_logged_batch:
                     last_logged_batch = batch_id
 
                     base_metrics = {
-                        "timestamp": progress["timestamp"],
+                        "timestamp": progress.get("timestamp"),
                         "batchId": batch_id,
                         "numInputRows": progress.get("numInputRows"),
                         "inputRowsPerSecond": progress.get("inputRowsPerSecond"),
                         "processedRowsPerSecond": progress.get("processedRowsPerSecond"),
-                        "batchDurationMs": progress.get("batchDuration"),
+                        "batchDurationMs": progress.get("durationMs", {}).get("triggerExecution"),
                         "schedulerDelayMs": progress.get("durationMs", {}).get("schedulerDelay"),
                         "processingDelayMs": progress.get("durationMs", {}).get("processingDelay"),
                         "totalDurationMs": progress.get("durationMs", {}).get("totalDuration"),
@@ -78,7 +91,7 @@ def log_streaming_metrics_per_batch(
                         base_metrics["window_metrics_error"] = str(e)
 
                     with open(log_file, "a") as f:
-                        f.write(json.dumps(base_metrics) + "\n")
+                        f.write(json.dumps(sanitize(base_metrics)) + "\n")
 
     threading.Thread(target=_logger, daemon=True).start()
 
@@ -88,7 +101,7 @@ def log_streaming_metrics_per_batch(
 # --------------------------------------------------
 spark = (
     SparkSession.builder
-    .appName("SparkStreaming_Q11_SessionWindows")
+    .appName("SparkStreaming_500ms_Throughput")
     .config(
         "spark.jars.packages",
         "org.apache.spark:spark-sql-kafka-0-10_2.12:3.5.0"
@@ -97,8 +110,9 @@ spark = (
 )
 
 spark.sparkContext.setLogLevel("ERROR")
-spark.conf.set("spark.default.parallelism", 8)
-spark.conf.set("spark.sql.shuffle.partitions", 8)
+
+spark.conf.set("spark.default.parallelism", 3)
+spark.conf.set("spark.sql.shuffle.partitions", 3)
 
 
 # --------------------------------------------------
@@ -106,7 +120,7 @@ spark.conf.set("spark.sql.shuffle.partitions", 8)
 # --------------------------------------------------
 schema = StructType([
     StructField("amount", IntegerType()),
-    StructField("region", StringType()),  # used as bidder
+    StructField("region", StringType()),
     StructField("event_time", LongType())  # epoch ms
 ])
 
@@ -120,7 +134,7 @@ raw_df = (
     .option("kafka.bootstrap.servers", "localhost:9092")
     .option("subscribe", "sales")
     .option("startingOffsets", "latest")
-    .option("maxOffsetsPerTrigger", 100000)
+    .option("maxOffsetsPerTrigger", 1000000)
     .load()
 )
 
@@ -153,7 +167,7 @@ processed_df = (
 
 
 # --------------------------------------------------
-# Event-time column for session window
+# Event-time conversion
 # --------------------------------------------------
 processed_df = processed_df.withColumn(
     "event_ts",
@@ -162,22 +176,23 @@ processed_df = processed_df.withColumn(
 
 
 # --------------------------------------------------
-# Watermark (required)
+# Watermark
 # --------------------------------------------------
 processed_df = processed_df.withWatermark("event_ts", "30 seconds")
 
 
 # --------------------------------------------------
-# Session Window Aggregation (Q11 equivalent)
+# 500ms Tumbling Window Aggregation (CORE CHANGE)
 # --------------------------------------------------
-session_df = (
+metrics_df = (
     processed_df
     .groupBy(
         col("region").alias("bidder"),
-        session_window(col("event_ts"), "10 seconds")
+        window(col("event_ts"), "500 milliseconds")
     )
     .agg(
         count("*").alias("bid_count"),
+
         expr("percentile_approx(latency_ms, 0.5)").alias("p50_latency_ms"),
         expr("percentile_approx(latency_ms, 0.95)").alias("p95_latency_ms"),
         expr("percentile_approx(latency_ms, 0.99)").alias("p99_latency_ms"),
@@ -187,35 +202,28 @@ session_df = (
 
 
 # --------------------------------------------------
-# Compute throughput based on session duration
+# Correct Throughput Definition
 # --------------------------------------------------
-session_df = session_df.select(
+metrics_df = metrics_df.select(
     col("bidder"),
+    col("window.start").alias("starttime"),
+    col("window.end").alias("endtime"),
     col("bid_count"),
-    col("session_window.start").alias("starttime"),
-    col("session_window.end").alias("endtime"),
     col("p50_latency_ms"),
     col("p95_latency_ms"),
     col("p99_latency_ms"),
     col("avg_latency_ms"),
-    expr("""
-        CASE
-            WHEN (CAST(session_window.end AS LONG)
-                - CAST(session_window.start AS LONG)) > 0
-            THEN bid_count /
-                (CAST(session_window.end AS LONG)
-                - CAST(session_window.start AS LONG))
-            ELSE bid_count
-        END
-    """).alias("throughput_rps")
+
+    # 500ms window => normalize to per-second rate
+    expr("bid_count / 0.5").alias("throughput_rps")
 )
 
 
 # --------------------------------------------------
-# Output Stream
+# Output Sink (for query access)
 # --------------------------------------------------
 query = (
-    session_df.writeStream
+    metrics_df.writeStream
     .format("memory")
     .queryName("metrics_table")
     .outputMode("complete")
@@ -225,12 +233,12 @@ query = (
 
 
 # --------------------------------------------------
-# Start logging
+# Start Logger Thread
 # --------------------------------------------------
 log_streaming_metrics_per_batch(query, spark)
 
 
 # --------------------------------------------------
-# Await termination
+# Keep running
 # --------------------------------------------------
 query.awaitTermination()

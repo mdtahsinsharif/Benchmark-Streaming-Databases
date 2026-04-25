@@ -23,7 +23,7 @@ producer = KafkaProducer(
 regions = ["north", "south", "east", "west"]
 
 # adjust this to control the throughput
-delay = 0.01
+delay = 0.000000001
 
 while True:
     now = int(time.time() * 1000)

@@ -1,2 +1,2 @@
-window_start=2026-04-18 12:38:50, window_end=2026-04-18 12:38:55, records=4999, avg_latency_ms=798.52, p50_ms=788, p95_ms=1503, p99_ms=1885
-window_start=2026-04-18 12:38:55, window_end=2026-04-18 12:39:00, records=100, avg_latency_ms=1212.95, p50_ms=1166, p95_ms=1395, p99_ms=2001
+window_start=2026-04-18 12:38:50, window_end=2026-04-18 12:38:55, records=6899, avg_latency_ms=798.52, p50_ms=788, p95_ms=1503, p99_ms=1885
+window_start=2026-04-18 12:38:55, window_end=2026-04-18 12:39:00, records=6800, avg_latency_ms=1212.95, p50_ms=1166, p95_ms=1395, p99_ms=2001
