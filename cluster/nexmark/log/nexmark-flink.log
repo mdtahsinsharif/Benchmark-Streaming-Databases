@@ -1,0 +1,22 @@
+2026-04-24 15:42:32,772 INFO  org.apache.flink.configuration.GlobalConfiguration           [] - Loading configuration property: nexmark.metric.reporter.host, 10.1.2.104
+2026-04-24 15:42:32,774 INFO  org.apache.flink.configuration.GlobalConfiguration           [] - Loading configuration property: nexmark.metric.reporter.port, 9098
+2026-04-24 15:42:32,774 INFO  org.apache.flink.configuration.GlobalConfiguration           [] - Loading configuration property: nexmark.workload.suite.100m.events.num, 100000000
+2026-04-24 15:42:32,774 INFO  org.apache.flink.configuration.GlobalConfiguration           [] - Loading configuration property: nexmark.workload.suite.100m.tps, 10000000
+2026-04-24 15:42:32,774 INFO  org.apache.flink.configuration.GlobalConfiguration           [] - Loading configuration property: nexmark.workload.suite.100m.queries, "q0,q1,q2,q3,q4,q5,q7,q8,q9,q10,q11,q12,q13,q14,q15,q16,q17,q18,q19,q20,q21,q22,q23"
+2026-04-24 15:42:32,775 INFO  org.apache.flink.configuration.GlobalConfiguration           [] - Loading configuration property: nexmark.workload.suite.100m.queries.cep, "q0,q1,q2,q3"
+2026-04-24 15:42:32,775 INFO  org.apache.flink.configuration.GlobalConfiguration           [] - Loading configuration property: nexmark.workload.suite.100m.warmup.duration, 200s
+2026-04-24 15:42:32,775 INFO  org.apache.flink.configuration.GlobalConfiguration           [] - Loading configuration property: nexmark.workload.suite.100m.warmup.events.num, 100000000
+2026-04-24 15:42:32,775 INFO  org.apache.flink.configuration.GlobalConfiguration           [] - Loading configuration property: nexmark.workload.suite.100m.warmup.tps, 10000
+2026-04-24 15:42:32,775 INFO  org.apache.flink.configuration.GlobalConfiguration           [] - Loading configuration property: nexmark.workload.suite.datagen.tps, 100000000
+2026-04-24 15:42:32,775 INFO  org.apache.flink.configuration.GlobalConfiguration           [] - Loading configuration property: nexmark.workload.suite.datagen.queries, "insert_datagen"
+2026-04-24 15:42:32,775 INFO  org.apache.flink.configuration.GlobalConfiguration           [] - Loading configuration property: nexmark.workload.suite.datagen.queries.cep, "insert_datagen"
+2026-04-24 15:42:32,776 INFO  org.apache.flink.configuration.GlobalConfiguration           [] - Loading configuration property: flink.rest.address, 10.1.2.104
+2026-04-24 15:42:32,776 INFO  org.apache.flink.configuration.GlobalConfiguration           [] - Loading configuration property: flink.rest.port, 8081
+2026-04-24 15:42:32,987 INFO  com.github.nexmark.flink.QueryRunner                         [] - ==================================================================
+2026-04-24 15:42:32,987 INFO  com.github.nexmark.flink.QueryRunner                         [] - Start to run query q11 with workload [tps=10 M, eventsNum=100 M, percentage=bid:46,auction:3,person:1,kafkaServers:null]
+2026-04-24 15:42:32,987 INFO  com.github.nexmark.flink.QueryRunner                         [] - Start the warmup for at most 200000ms and 100000000 events.
+2026-04-24 15:42:32,996 INFO  com.github.nexmark.flink.QueryRunner                         [] - 
+================================================================================
+Query q11 is running.
+--------------------------------------------------------------------------------
+
